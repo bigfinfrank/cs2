@@ -1,7 +1,7 @@
 # [Fin](https://steamcommunity.com/id/bigfinfrank)'s [CSGO](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive) [Autoexec](https://developer.valvesoftware.com/wiki/Autoexec).[CFG](https://developer.valvesoftware.com/wiki/CFG)
 
 This is my CSGO "Config" or as I prefer to call it, my CSGO autoexec. It's what customises my game beyond what the in-game settings UI lets you using automatically run console commands. By design, because you can use it to run any in-game console command as if you opened the console and typed it in, this is insanely powerful.
-One simple example is the (now patched?) CSGO bomb finding bind that turns on the game instructor (the tutorial-esque popups) to show where the bomb is through smokes. 
+One simple example is the (now patched?) CSGO bomb finding bind that turns on the game instructor (the tutorial-esque popups) to show where the bomb is through smokes.
 
 I should also point out that the main files (no custom knife files or anything) as well as my launch options and my settings are available nicely formatted on [settings.gg](https://settings.gg/player/248313757)
 
