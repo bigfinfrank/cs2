@@ -5,6 +5,34 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 3.0.0
+```diff
++ Added hostname that credits this project to 0.0
++ Added documentation for every remaining command with an explanation given by Valve
++ Allowed and enabled use of net_graph "2" to display incoming/outcoming data statistics
++ Added r_eyemove "0" which disables eye animations that are hidden from view on most models anyways
++ Added cl_fixedcrosshairgap "-4" and set cl_crosshairgap to -2 (previously -3)
++ Added cl_show_observer_crosshair "2" to 8.0 hud settings
+
+* Made binds capitalised to match Valve-generated config.cfg values
+* Made crosshair smaller (crosshair_size "1", used to be 1.5)
+* Disabled crosshair transparency
+* Updated crosshair code
+* Moved Less-important note about VSCodium to CONTRIBUTING.md
+* Moved trusted_launch_info below version and status in 11.0
+* Changed 1.0 and 1.1 to say client-side networking and server-side networking
+* Changed max FPS down to 1000, going too high can cause physical damage to some GPUs, pointlessly wears down your GPU, and wastes power.
+* Changed 3.2 shorthand convars to shorthand commands (because there is a difference)
+* Replaced convar with commands in some places (a convar stores a value, a command does not)
+! The change directly above affected the 2.0.0 and 2.1.0 changelogs, so they have been updated
+
+- Removed Note about mm_dedicated_search_maxping because players are warned in-game if their ping threshold is too low
+- Removed -cl_show_team_equipment, cl_cmdrate, net_graph, firstperson, and:
+- Removed sv_cheats "0" from 10.0 Finishing Up (sv_cheats is no longer a necessary launch option)
+!!! THIS IS A BREAKING CHANGE If you were relying on sv_cheats "0" being called at the end of your autoexec.cfg, add it back.
+```
+
+
 ## 2.1.0
 ```diff
 + Added sv_pure "1" to 0.0 as it's requried to play on any reasonable server including MM
@@ -17,7 +45,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 * Changed crosshair to be static instead of dynamic (the crosshair code has also been updated)
 * Changed 0.0 controller support exec to use fixed_controller.360.cfg (this is in quotes now too, it wasn't before)
-* Changed semicolon to directly use the disconnect convar instead of the dc alias
+* Changed semicolon to directly use the disconnect command instead of the dc alias
 * Changed default sv_contact to my email fin@fin.fail (YOU SHOULD CHANGE THIS THOUGH, PLEASE)
 * Moved viewmodel_offset_y up one line so they're videmodel_offset_? are ordered x,y,z instead of x,z,y
 * Moved commented out rgbhud to the last position in 3.3.N (and updated the comment)
@@ -46,7 +74,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 + Documented what each key is inline
 + Added link to the GitHub repo in the loading and loaded credit messages
 
-* Put all `echo` convars in "doublequotes" for consistent formatting
+* Put all `echo` commands in "doublequotes" for consistent formatting
 * Added sv_cheats 0 to noknives alias and added sv_cheats 0 to 10.0 Finalization
 !!!   THIS IS A NOTEWORTHY CHANGE, WE NOW AlWAYS ASSUME YOUR SERVER IS RUNNING WITH AND THAT YOU WANT sv_cheats 0   !!!
 * Fixed diff formatting for 1.0.15 changelog

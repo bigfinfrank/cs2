@@ -4,3 +4,6 @@
 videodefaults.txt
 ## Information about CSGO's Trust Launch security feature
 trustedlaunch.cfg
+
+# Microsoft Visual Studio Code
+.vscode/

@@ -12,7 +12,7 @@ There's a lot in them but it all breaks down to some pretty simple formatting an
 
 
 ### CFG Explanation
-CFG is a file type just like `.exe` or `.txt`. When you put a file ending in `.cfg` (i.e. `autoexec.cfg`) in specific folders, CSGO will see that and know that the file has console commands (also called [convars](https://developer.valvesoftware.com/wiki/ConVar)).
+CFG is a file type just like `.exe` or `.txt`. When you put a file ending in `.cfg` (i.e. `autoexec.cfg`) in specific folders, CSGO will see that and know that the file has console commands.
 If you're more technically inclined, Valve has a more detailed explanation of these files in their Developer Docs which you check out [here](https://developer.valvesoftware.com/wiki/CFG).
 
 
@@ -32,19 +32,18 @@ Still have questions? Check the FAQ below and if you still don't have an answer,
 ## Todo List
 *Help with these would be much appreciated*
 
-+ Proper GitHub repo
 + External doumentation (through the GitHub Wiki feature)
 + Finish inline documentation (See "// TODO: " comments)
-+ Add semicolons after every convar;
++ Add semicolons after every convar and command;
 + Implement [BananaGaming's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q&t=0s) (multiple binds per key using key combos)
 
 * Grammar/typo check
-* Change binds to use all caps (because that's how they're stored by valve in `config.cfg`)
+* Change binds to use all caps (because that's how they're stored by Valve in `config.cfg`)
 * Make newlines and spacing have consistent formatting
 
 - Remove old unused stuff
 - Remove broken 'features' of the config
-- Remove convars that valve removed
+- Remove convars and commands that Valve removed
 
 
 ## Contributing
