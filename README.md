@@ -7,7 +7,7 @@ I should also point out that the main files (no custom knife files or anything) 
 
 
 ## You lost me at "Autoexec"
-That's totally fine, it's definitely complicated (especially for beginners) and creating your own can be pretty daunting. I'll do my best to use simple and uncomplicated terminology in the explanations below, just please try not to get turned away by the size of the CFGs. 
+That's totally fine, it's definitely complicated (especially for beginners) and creating your own can be pretty daunting. I'll do my best to use simple and uncomplicated terminology in the explanations below, just please try not to get turned away by the size of the CFGs.
 There's a lot in them but it all breaks down to some pretty simple formatting and everything is organized (and soon documented on each line)
 
 
