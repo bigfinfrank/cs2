@@ -6,7 +6,7 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
-# 3.0.1
+## 3.0.1
 ```diff
 + Added practice.cfg, which enables various practice configuration settings
 + Added +loudshift and -loudshift aliases to increase volume while shift-walking
