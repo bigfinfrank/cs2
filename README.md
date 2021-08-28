@@ -37,7 +37,6 @@ Still have questions? Check the FAQ below and if you still don't have an answer,
 + Add semicolons after every convar and command;
 + Implement [BananaGaming's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q&t=0s) (multiple binds per key using key combos)
 
-* Grammar/typo check
 * Change binds to use all caps (because that's how they're stored by Valve in `config.cfg`)
 * Make newlines and spacing have consistent formatting
 

@@ -5,6 +5,26 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+
+# 3.0.1
+```diff
++ Added practice.cfg, which enables various practice configuration settings
++ Added +loudshift and -loudshift aliases to increase volume while shift-walking
++ Added "Damage Given" at the start of the clearchat alias to clog up people with Damage Given filters' screens
++ Added controller binds for the Xbox One/Xbox 360 (probably also works for ps3/ps4/ps5 and steam) controllers
++ Added scoreneton and scorenetoff aliases that are toggle versions of +scorenet and -scorenet intended for controller
+
+* Replaced togglescores with scoreneton in controler binds
+* Updated crosshair (thickness & size 1 -> 0.5), updated crosshair code
+* Changes sensitivty from 2 to 3
+* Changed all instances of +speed to use the new and improved +loudshift
+* Changed "Damage Given" filter to look for the more specific "Damage Given to " (this removes one unnecessary line from being shown and lowers targetted attacks like the clearchat one added in this update)
+* Adjust non-functional formatting (stuff like whitespace and new lines)
+* Finish off some more in-line documentation
+* Changed sv_contact email **THAT YOU SHOULD HAVE ALREADY CHANGED ANYWAYS**
+```
+
+
 ## 3.0.0
 ```diff
 + Added hostname that credits this project to 0.0
