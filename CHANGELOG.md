@@ -6,6 +6,28 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+
+## 3.0.2
+```diff
++ Added game_mode 1 and game_type 0 to practice.cfg (this sets the server to competitive)
++ Added launch options (with explanations) to README.md
++ Added 'hotswap' aliases to change preferred tickrate for: 16, 32, 64, 128, 256, and 512 tick
++ Bound cast_ray command to 4
++ Added csgo_bigfinfrank.txt to the GitHub Repo (you no longer need to got Settings.GG to get it!)
++ Added toggle aliases for aliases that previously directly used the "bind" command
+! THE ABOVE CHANGE MEANS THAT YOU NEED TO SWAP YOUR lefthand ALIAS TO USE handswap INSTEAD
+
+* Changed 11.0 echo to say "Game info and Gaben" instead of "Info and Gaben"
+* Updated TODO list
+* Updated some documentation
+* Fix some formatting
+* Change WASD To ESDF (more bindable keys within reach, it's better long term but hard to adjust)
+
+- Commented out bindings in fixed_controller.360.cfg, you should use the ones added to autoexec.cfg in v3.0.1 instead.
+- Removed some comments from practice.cfg
+```
+
+
 ## 3.0.1
 ```diff
 + Added practice.cfg, which enables various practice configuration settings
