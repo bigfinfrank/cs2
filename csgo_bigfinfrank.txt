@@ -1,13 +1,13 @@
 // Text Color Mod 1.0.1
 // Original idea by Orel & spddl
-// Rewritten and edited by BananaGaming from BananaGaming GoBananas Version 1.0 through 4.2b 
+// Rewritten and edited by BananaGaming from BananaGaming GoBananas Version 1.0 through 4.2b
 // Edited and tweaked more by bigfinfrank since 1.0.1 (1.0.0 is considered BananaGaming's 4.2b)
 
 "lang"
 {
 "Language" "English"
 "Tokens"
-{ 
+{
 // -------------------------------------------------------------------------------------------
 	// MATCH READY BUTTON
 	
@@ -90,7 +90,7 @@
 		"Panorama_FreezePanel_DamageGiven_Multi"		"<font color='#A0A0A0'>Damage given:  </font><font color='#00ff00'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> in</font> <font color='#00ff00'><b>{d:hits_given} hits </b></font> <font color='#A0A0A0'>to {s:killer_name}</font>"
 		"Panorama_Freeze_Snapshot"						""
 		
-	// TARGET PLAYER (IN-GAME) 
+	// TARGET PLAYER (IN-GAME)
 	
 		"Panorama_HUD_playerid_sameteam"		"<font color='#00ff00'>{s:player_name} - {d:player_health}%</font>"
 		"Panorama_HUD_playerid_diffteam"		"<font color='#ff0000'>{s:player_name}</font>"

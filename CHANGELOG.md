@@ -7,6 +7,20 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 
+## 3.0.3
+```diff
++ Added qmmconnect.dt to .gitignore
++ Added semicolons to the end of commands & convars
++ Added r_cleardecals; to slot keys
+
+* Fixed a couple markdown problems in README.md (plus some slight wording changes)
+* Re-ordered crosshair commands, they're sorted by length again! 😄
+* Change kp_multiply (the asterisk on the numpad) to run exec practice.cfg;
+
+- Removed trailing spaces (spaces at the end of lines) in a couple spots
+```
+
+
 ## 3.0.2
 ```diff
 + Added game_mode 1 and game_type 0 to practice.cfg (this sets the server to competitive)
