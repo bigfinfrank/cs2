@@ -6,6 +6,19 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 3.0.4
+```diff
++ Added missing semicolons to the end of commands & convars
++ Added missing "double quotes" around certain values
+
+* Re-ordered some lines in autoexec.cfg for better aesthetics
+* Changed formatting in fixed_controller.360.cfg substantially
+* Changed formatting in practice.cfg to be a bit more consistent
+* Updated README Todo List 
+* Changed previous changelogs to consistently use past-tense
+* Adjusted whitespace in autoexec.cfg to vertically align some convar values
+```
+
 
 ## 3.0.3
 ```diff
@@ -15,7 +28,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 * Fixed a couple markdown problems in README.md (plus some slight wording changes)
 * Re-ordered crosshair commands, they're sorted by length again! 😄
-* Change kp_multiply (the asterisk on the numpad) to run exec practice.cfg;
+* Changed kp_multiply (the asterisk on the numpad) to run exec practice.cfg;
 
 - Removed trailing spaces (spaces at the end of lines) in a couple spots
 ```
@@ -34,8 +47,8 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 * Changed 11.0 echo to say "Game info and Gaben" instead of "Info and Gaben"
 * Updated TODO list
 * Updated some documentation
-* Fix some formatting
-* Change WASD To ESDF (more bindable keys within reach, it's better long term but hard to adjust)
+* Fixed some formatting
+* Changed WASD To ESDF (more bindable keys within reach, it's better long term but hard to adjust)
 
 - Commented out bindings in fixed_controller.360.cfg, you should use the ones added to autoexec.cfg in v3.0.1 instead.
 - Removed some comments from practice.cfg
@@ -52,11 +65,11 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 * Replaced togglescores with scoreneton in controler binds
 * Updated crosshair (thickness & size 1 -> 0.5), updated crosshair code
-* Changes sensitivty from 2 to 3
+* Changed sensitivty from 2 to 3
 * Changed all instances of +speed to use the new and improved +loudshift
 * Changed "Damage Given" filter to look for the more specific "Damage Given to " (this removes one unnecessary line from being shown and lowers targetted attacks like the clearchat one added in this update)
-* Adjust non-functional formatting (stuff like whitespace and new lines)
-* Finish off some more in-line documentation
+* Adjusted non-functional formatting (stuff like whitespace and new lines)
+* Finished off some more in-line documentation
 * Changed sv_contact email **THAT YOU SHOULD HAVE ALREADY CHANGED ANYWAYS**
 ```
 
@@ -130,7 +143,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 + Documented what each key is inline
 + Added link to the GitHub repo in the loading and loaded credit messages
 
-* Put all `echo` commands in "doublequotes" for consistent formatting
+* Added "doublequotes" to all `echo` for consistent formatting
 * Added sv_cheats 0 to noknives alias and added sv_cheats 0 to 10.0 Finalization
 !!!   THIS IS A NOTEWORTHY CHANGE, WE NOW AlWAYS ASSUME YOUR SERVER IS RUNNING WITH AND THAT YOU WANT sv_cheats 0   !!!
 * Fixed diff formatting for 1.0.15 changelog

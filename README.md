@@ -83,9 +83,8 @@ You can check to make sure that you have manually set it (which you need to do o
 *Help with these would be much appreciated*
 
 + Implement [BananaGaming's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q&t=0s) (multiple binds per key using key combos)
-+ Add semicolons after every convar and command;
-+ Finish inline documentation (See "// TODO: " comments)
-+ External doumentation (through the GitHub Wiki feature)
++ Figure out what the `S1_UP` and `S2_UP` keys map to physically on controllers
++ External doumentation (with GitHub Wikis)
 
 
 ## Contributing
