@@ -44,7 +44,7 @@ Mine:
 ```
 Mine without the me-specific options (easy copy-paste):
 ```code
--d3d9ex -small -novid -language bigfinfrank -rpt -vcrrecord -tickrate 64 -high -windowed -noborder -refreshrate 144 -maxplayers_override 255 +exec autoexec.cfg
+-d3d9ex -small -novid -language bigfinfrank -rpt -vcrrecord -tickrate 64 -high -windowed -noborder -maxplayers_override 255 +exec autoexec.cfg
 ```
 
 First to get this out of the way, options that start with a `-` are "normal" launch options that generally can't be changed in game or tell your OS how the game should start. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts, you could put +sv_cheats 1 in there to turn on sv_cheats without an Autoexec for example.
@@ -88,4 +88,4 @@ You can check to make sure that you have manually set it (which you need to do o
 
 
 ## Contributing
-Push a signed commit adding your name (and optionally a link to your GitHub or other popular social media account) to CONTRIBUTORS.md then make a Pull Request with that change. Afterwards you can start making Pull Requests with proper changes!
+Push a signed commit adding your name (and optionally a link to your GitHub or account on a popular social media platform) to CONTRIBUTORS.md then make a Pull Request with your changes. Afterwards you can start making Pull Requests with proper changes!

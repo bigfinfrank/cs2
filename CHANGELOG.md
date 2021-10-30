@@ -5,6 +5,16 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 3.0.5
+```diff
+* Updated warnings at the top of autoexec.cfg
+* Updated ## Contributing wording in README.md
+* Renamed primary git branch main -> csgo
+! Yes there will be other source games besides CSGO soon, next up is TF2 
+* Renamed LICENSE -> LICENSE.txt
+
+- Removed refreshrate from the non "me-specific" launch options in README.md
+```
 
 ## 3.0.4
 ```diff
