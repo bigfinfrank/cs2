@@ -9,7 +9,7 @@ We have a couple general formatting rules.
 - All links should be `https://` not `http://`. If the site doesn't support HTTPS then frankly unless it's ***really*** important that it get's linked it doesn't deserve to be linked to.
 
 ### New lines, whitespace (spaces), and line endings
-- You shouldn't use TABs, only spaces and indents should be two spaces in size.
+- You shouldn't use TABs, only spaces. Indents should be two spaces in size.
 - Every file should have a trailing new line (an empty line at the end of the file).
 - You should use LF (Unix-style) line endings
 
