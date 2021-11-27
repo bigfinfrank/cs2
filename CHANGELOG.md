@@ -5,6 +5,10 @@ The TF2 Config started with the my CSGO config 3.0.6 as a base and was edited fo
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 0.1.0-rc5
+* Fixed missing newline between Additions and Changes in 0.1.0-rc4 changelog
+* Change references from CSGO to TF2 in README.md
+* Made launch options a markdown list
 
 ## 0.1.0-rc4
 + Added cl_mute_all_comms "1" to section 0.0
@@ -19,6 +23,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 + Added sv_motd_unload_on_dismissal "1"; to free up a tiny amount of RAM
 + Added bugreporter_uploadasync "1"; to alleviate lag spikes when uploading bug reports
 + Added "record fix; stop;" and snd_restart; to reset/refresh states section 9.1
+
 * Fixed some missing semicolons
 * Fixed some spaces missing and some extra ones causing comments to be misaligned
 * Remove showmapinfo bind and replaced it with a second say_party bind
