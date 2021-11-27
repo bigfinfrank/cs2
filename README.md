@@ -47,7 +47,8 @@ Mine without the me-specific options (easy copy-paste):
 -d3d9ex -no_texture_stream -small -forever -novid -rpt -tickrate 32 -high -windowed -noborder -maxplayers 255 +exec autoexec.cfg
 ```
 
-First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts, one example is if you needed to use sv_cheats commands in your autoexec, you could put `+sv_cheats 1` in your launch options and turn off sv_cheats at the end of your autoexec that way the cheat command is enabled when you launch but if you reload your config in-game it won't disable achievements.
+First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts.
+One example of where this could be useful is if you needed to use sv_cheats commands in your autoexec, you could put `+sv_cheats 1` in your launch options and turn off sv_cheats at the end of your autoexec that way the cheat command is enabled when you launch but if you reload your config in-game it won't disable achievements.
 
 
 ### How do I set launch options?
