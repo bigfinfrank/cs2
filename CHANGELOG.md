@@ -1,9 +1,14 @@
 # Fin's TF2 Config Changelog
 This file contains the changes made version-by-version from newest at the top to oldest at the bottom.
-The TF2 Config started with the my CSGO config 3.0.6 as a base and was edited for TF2 from there, so 0.1.0.
+The TF2 Config started with my CSGO config 3.0.6 as a base and was edited for TF2 from there, so 0.1.0.
 1.0.15 is the first Changelog added and has an incomplete list of changes but the changes still serve as a good example for the diff-like formatting.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
+
+
+## 0.1.0-rc7
+* Fixed linting issue introduce in 0.1.0-rc5
+* Fixed a grammar issue at the top of CHANGELOG.md
 
 
 ## 0.1.0-rc6
@@ -13,7 +18,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 ## 0.1.0-rc5
 * Fixed missing newline between Additions and Changes in 0.1.0-rc4 changelog
 * Change references from CSGO to TF2 in README.md
-* Made launch options a markdown list
+* Made launch options a Markdown list
 
 
 ## 0.1.0-rc4
