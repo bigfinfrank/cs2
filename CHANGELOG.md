@@ -6,6 +6,21 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc3
++ Added sv_steamblockcheck "4" to avoid playing with any players you have blocked
++ Added description to tf_use_min_viewmodels
++ Added customunbindalljoystick alias that execs customunbindalljoystick.cfg which is also new. customunbindalljoystick.cfg unbinds every joystick (controller) command.
++ Added hud_reloadscheme to section 9.0
+
+* Fixed some inconsistent formatting with newlines between sections
+* Replaced cl_join_advertise with tf_party_join_request_mode
+* Swapped commented out unbindalljoystick command for the new customunbindalljoystick alias
+
+- Removed +/-defuse alias
+- Removed TODO note from cl_observercrosshair
+- Removed commented out cl_show_clan_in_death_notice
+
+
 ## 0.1.0-rc2
 * Fixed linting problem in README.md
 * Added an extra newline before the start of the version h2's
