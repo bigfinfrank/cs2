@@ -6,6 +6,32 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc9
++ Added missed "settings.scr" to .gitignore
++ Added clearinputs.cfg which executes automatically in section 9.1
++ Added mp_respawnwavetime "0" to practice.cfg
++ Created finsfriends.cfg with all of our preferred server host convar settings
++ Added clearinputs.cfg which runs all -commands and aliased it
++ Added intelligent cheatstart and cheatend aliases for toggling sv_cheats (credit: https://github.com/JarateKing/jarconfig/blob/master/cfg/binds/cheats.cfg)
++ Added lists/ folder with 60percentrow1.cfg -> 60percentrow6.cfg, 80percentkeys.cfg, joystickbinds.cfg, mousekeybinds.cfg, and numberpadkeys.cfg that dynamically put current bindings in console
++ Added 16 bit representation after cl_training_completed_with_classes
+
+* Changed sv_pure to "2" instead of "1" which is more secure but doesn't allow custom skins/models.
+* Updated exec in section 0.0 to call the new name cfg name, fixed_360controller.cfg
+* Fixed handful of missing/extra newlines causing inconsistent formatting
+* Updated whitespace to give some areas better aesthetics
+* Changed filtered out console text to remove warnings from the -hushsteam launch option
+* Added missing semicolons to the ends of lines
+* Reordered some convars and commands within their sections to make them more aesthetically pleasing
+* Fixed an extra 1 before the actual "1"; where tf_inspect_hint_count is set
+* Fixed -ncmbackward calling "cf" (original vague mastercomfig name) alias instead of "ncmcancelleft" (my name in this config)
+* Fixed extra newlines at the end of practice.cfg
+* Updated launch options
+
+- Removed note about settings.gg from README
+- Removed contributing section in README because that's on the main branch's README
+
+
 ## 0.1.0-rc8
 + Added files from TF2's /tf/cfg folder to .gitignore so it's usable as a working directory for maintaing the project
 

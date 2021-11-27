@@ -3,8 +3,6 @@
 This is my TF2 "Config" or as I prefer to call it, my TF2 autoexec. It's what customises my game beyond what the in-game settings UI lets you using automatically run console commands. By design, because you can use it to run any in-game console command as if you opened the console and typed it in, this is insanely powerful.
 One simple example is the (now patched?) TF2 bomb finding bind that turns on the game instructor (the tutorial-esque popups) to show where the bomb is through smokes.
 
-I should also point out that the main files (no custom knife files or anything) as well as my launch options and my settings are available nicely formatted on [settings.gg](https://settings.gg/player/248313757)
-
 
 ## You lost me at "Autoexec"
 That's totally fine, it's definitely complicated (especially for beginners) and creating your own can be pretty daunting. I'll do my best to use simple and uncomplicated terminology in the explanations below, just please try not to get turned away by the size of the CFGs.
@@ -40,11 +38,11 @@ Mine are specifically setup for my PC (**Seriously, if you use exactly you could
 
 Mine:
 ```code
--d3d9ex -no_texture_stream -small -forever -novid -rpt -tickrate 32 -high -windowed -noborder -refreshrate 144 -maxplayers_override 255 +exec autoexec.cfg
+-no_texture_stream -small -forever -hushsteam -novid -rpt -high -windowed -noborder -refreshrate 144 -maxplayers 255 +exec autoexec.cfg
 ```
 Mine without the me-specific options (easy copy-paste):
 ```code
--d3d9ex -no_texture_stream -small -forever -novid -rpt -tickrate 32 -high -windowed -noborder -maxplayers 255 +exec autoexec.cfg
+-d3d9ex -no_texture_stream -small -forever -novid -rpt -high -windowed -noborder -maxplayers 255 +exec autoexec.cfg
 ```
 
 First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts.
@@ -79,7 +77,3 @@ To change your launch options for steam games, the best and easiest way to chang
 
 + Implement [BananaGaming's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q&t=0s) (multiple binds per key using key combos)
 + External doumentation (with GitHub Wikis)
-
-
-## Contributing
-Push a signed commit adding your name (and optionally a link to your GitHub or account on a popular social media platform) to CONTRIBUTORS.md then make a Pull Request with your changes. Afterwards you can start making Pull Requests with proper changes!
