@@ -6,12 +6,21 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc10
+```diff
+* Changed previous changelog entries to be in diff codeblocks which should fix a Markdown linting complaint
+* Fixed outdated hostname
+
+- Removed cl_hud_color from section 7.0
+- Removed duplicate note about clearinputs.cfg in the 0.1.0-rc9 changelog
+```
+
 ## 0.1.0-rc9
+```diff
 + Added missed "settings.scr" to .gitignore
 + Added clearinputs.cfg which executes automatically in section 9.1
 + Added mp_respawnwavetime "0" to practice.cfg
 + Created finsfriends.cfg with all of our preferred server host convar settings
-+ Added clearinputs.cfg which runs all -commands and aliased it
 + Added intelligent cheatstart and cheatend aliases for toggling sv_cheats (credit: https://github.com/JarateKing/jarconfig/blob/master/cfg/binds/cheats.cfg)
 + Added lists/ folder with 60percentrow1.cfg -> 60percentrow6.cfg, 80percentkeys.cfg, joystickbinds.cfg, mousekeybinds.cfg, and numberpadkeys.cfg that dynamically put current bindings in console
 + Added 16 bit representation after cl_training_completed_with_classes
@@ -30,33 +39,38 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 - Removed note about settings.gg from README
 - Removed contributing section in README because that's on the main branch's README
-
+```
 
 ## 0.1.0-rc8
+```diff
 + Added files from TF2's /tf/cfg folder to .gitignore so it's usable as a working directory for maintaing the project
 
 * Renamed fixed_controller.360.cfg to be in line with tf2's controller file (it's now fixed_360controller.cfg)
 
 - Deleted CONTRIBUTING.md and CONTRIBUTORS.md, these are now on the special "main" branch
 - Deleted ISSUE_TEMPLATE/ and PULL_REQUEST_TEMPLATE/ folders and their .keep files because they're only useful on the default GitHub branch
-
+```
 
 ## 0.1.0-rc7
+```diff
 * Fixed linting issue introduce in 0.1.0-rc5
 * Fixed a grammar issue at the top of CHANGELOG.md
-
+```
 
 ## 0.1.0-rc6
+```diff
 * Fixed missing newlines in changelog above 0.1.0-rc5 and between 0.1.0-rc5 and 0.1.0-rc4
-
+```
 
 ## 0.1.0-rc5
+```diff
 * Fixed missing newline between Additions and Changes in 0.1.0-rc4 changelog
 * Change references from CSGO to TF2 in README.md
 * Made launch options a Markdown list
-
+```
 
 ## 0.1.0-rc4
+```diff
 + Added cl_mute_all_comms "1" to section 0.0
 + Added missing in-line documentation for a handful of convars/commands
 + Added a handful of networking optimisations from various online sources and valve's developer docs
@@ -78,9 +92,10 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 - Removed video.txt
 - Removed old 3.3.7 knife aliases
-
+```
 
 ## 0.1.0-rc3
+```diff
 + Added sv_steamblockcheck "4" to avoid playing with any players you have blocked
 + Added description to tf_use_min_viewmodels
 + Added customunbindalljoystick alias that execs customunbindalljoystick.cfg which is also new. customunbindalljoystick.cfg unbinds every joystick (controller) command.
@@ -93,14 +108,16 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 - Removed +/-defuse alias
 - Removed TODO note from cl_observercrosshair
 - Removed commented out cl_show_clan_in_death_notice
-
+```
 
 ## 0.1.0-rc2
+```diff
 * Fixed linting problem in README.md
 * Added an extra newline before the start of the version h2's
-
+```
 
 ## 0.1.0-rc1
+```diff
 + Added an end-of-file trailing newline to .gitignore
 + Added a second nag about reading this to the important box
 + Added a custom weapon and camera FOV to section 2.0
@@ -189,3 +206,4 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 - Removed trusted_launch_info from section 10.0 because TF2 does not support trusted launch.
 - Deleted config.cfg because there either isn't or I couldn't find a TF2 equivelant file
 - Removed csgo_bigfinfrank.txt because it's going to be extremely incompatible with TF2, a TF2 version might be added in the future but it's unlikely.
+```
