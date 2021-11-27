@@ -6,6 +6,29 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc4
++ Added cl_mute_all_comms "1" to section 0.0
++ Added missing in-line documentation for a handful of convars/commands
++ Added a handful of networking optimisations from various online sources and valve's developer docs
++ Enabled sv_lan "1";
++ Changed engine_no_foucs_sleep time to 1ms which should result in much higher fps and tickrates while tabbed out
++ Set the maximum number of dropped packets to 0 and increased the max uploaded file size to 64mb
++ Added a handful of graphical/performance optimisations to section 2.1
++ Added additional mastercomfig sound settings not included in sound=ultra but in comfig.cfg
++ Added a variety of HUD tweaks including disabling achievements and speeding up animations
++ Added sv_motd_unload_on_dismissal "1"; to free up a tiny amount of RAM
++ Added bugreporter_uploadasync "1"; to alleviate lag spikes when uploading bug reports
++ Added "record fix; stop;" and snd_restart; to reset/refresh states section 9.1
+* Fixed some missing semicolons
+* Fixed some spaces missing and some extra ones causing comments to be misaligned
+* Remove showmapinfo bind and replaced it with a second say_party bind
+* Shuffled around some config values to make them more aesthetically pleasing
+* Moved hud_reloadscheme to saving section 9.2
+
+- Removed video.txt
+- Removed old 3.3.7 knife aliases
+
+
 ## 0.1.0-rc3
 + Added sv_steamblockcheck "4" to avoid playing with any players you have blocked
 + Added description to tf_use_min_viewmodels
