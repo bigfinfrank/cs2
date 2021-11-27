@@ -6,6 +6,15 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc8
++ Added files from TF2's /tf/cfg folder to .gitignore so it's usable as a working directory for maintaing the project
+
+* Renamed fixed_controller.360.cfg to be in line with tf2's controller file (it's now fixed_360controller.cfg)
+
+- Deleted CONTRIBUTING.md and CONTRIBUTORS.md, these are now on the special "main" branch
+- Deleted ISSUE_TEMPLATE/ and PULL_REQUEST_TEMPLATE/ folders and their .keep files because they're only useful on the default GitHub branch
+
+
 ## 0.1.0-rc7
 * Fixed linting issue introduce in 0.1.0-rc5
 * Fixed a grammar issue at the top of CHANGELOG.md
