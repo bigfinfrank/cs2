@@ -6,6 +6,10 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc11
+* Changed G to taunt instead of inspecting your weapon
+
+
 ## 0.1.0-rc10
 ```diff
 * Changed previous changelog entries to be in diff codeblocks which should fix a Markdown linting complaint
