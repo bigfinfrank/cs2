@@ -5,16 +5,72 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 4.0.0
+```diff
++ Added second nag to read the important box at the top of autoexec
++ Added sv_lan to 1.0 client-side networking
++ Added engine_no_focus_sleep to stop the games tickrate and FPS from dropping while tabbed out (1.1 server-side networking)
++ Added additional 3.3.8 knife aliases (a bunch of additional danger zone items)
++ Added documentation commets to 3.3.10 volume bump while slow walking alias
++ Added null-cancel-movement binds which let you move in the opposite direction immediately by hitting the opposite key intead of stopping (press left key while holding right key will make you start going left while you hold the left key)
++ Added clearinputs alias to clear all +input keys
++ Added an experimental smart sv_cheats state setting aliases
++ Added bind listing aliases
++ Added TF2 parity aliases mapping +inspect to +lookatweapon
++ Added mathematically superior zoom_sensitivity_ratio_mouse to actually match non-zoomed sensitivity for small flicks
++ Added comment about alternate rgb hud version
++ Added LWIN and RWIN keys to 7.5 keyboard row 6
++ Added ping (as in latency) and cast_ray to MOUSE3 in 7.6 mouse binds
++ Added bugreporter_uploadasync "1" to 9.0 small tweaks
++ Added section 9.1 with Tweaks from TF2 mastercomfig
++ Added section 10.2 Reset/refresh states which runs hud_reloadscheme;
++ Added clearinputs.cfg which runs the -command for all of the hold-down keys like +forward etc.
++ Added mp_respawnwavetime to practice.cfg
++ Added .vscode/settings.json with an LF line endings enforcement in it
++ Added knife and danger zone item scripts to items/ folder
++ Added keybind listing scripts to lists/ folder
+
+* Specified text file types in .gitattributes
+* Removed .vscode/ from .gitignore
+* Changed wording around sv_contact
+* Changed sv_contact to a csgo specific one
+* Replaced cl_forcepreload with the new sv_forcepreload
+* Changed mat_monitorgamma comment to use single quotes
+* Changed autoknifeinspect to use +inspect alias instead of +lookatweapon
+* Swapped use for use_or_reload in 3.3.6 bomb finder alias
+* Fixed missing semicolon on angermanagement alias in 3.3.11 chat aliases
+* Fixed missing semicolons to the end of section echoes
+* Changed F5 to use screenshot instead of jpeg
+* Changed 5 key to call slot4 and clear decals instead of cast_ray
+* Changed binds to use ncm (null-cancel-movement) directional binds
+* Changed G key to use +inspect instead of +lookatweapon
+* Renamed section 9.0 from Polishing up some stuff to Small tweaks
+* Fixed missing new line in CHANGELOG.md between 3.0.5 and 3.0.4
+* Updated config.cfg
+* Fixed missing trailing end of file new line in csgo_bigfinfrank.txt and fixed_controller.360.cfg
+* Fixed missing semicolons in gaben.cfg and practice.cfg
+* Updated launch options
+
+- Removed settings.gg link from autoexec
+- Removed trailing spaces from changelogs 3.0.5 and 3.0.4
+- Removed whitespace and emoji from 3.0.3 changelog
+- Removed CONTRIBUTING.md and CONTRIBUTORS.md because they're not needed no the non-main GitHub branch
+- Removed settings.gg reference and contributing section from README.md
+- Removed ISSUE_TEMPLATE/ and PULL_REQUEST_TEMPLATE/ as well as their accompanying .keep files since they aren't need on the non-main GitHub branch
+```
+
+
 ## 3.0.5
 ```diff
 * Updated warnings at the top of autoexec.cfg
 * Updated ## Contributing wording in README.md
 * Renamed primary git branch main -> csgo
-! Yes there will be other source games besides CSGO soon, next up is TF2 
+! Yes there will be other source games besides CSGO soon, next up is TF2
 * Renamed LICENSE -> LICENSE.txt
 
 - Removed refreshrate from the non "me-specific" launch options in README.md
 ```
+
 
 ## 3.0.4
 ```diff
@@ -24,7 +80,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 * Re-ordered some lines in autoexec.cfg for better aesthetics
 * Changed formatting in fixed_controller.360.cfg substantially
 * Changed formatting in practice.cfg to be a bit more consistent
-* Updated README Todo List 
+* Updated README Todo List
 * Changed previous changelogs to consistently use past-tense
 * Adjusted whitespace in autoexec.cfg to vertically align some convar values
 ```
@@ -37,7 +93,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 + Added r_cleardecals; to slot keys
 
 * Fixed a couple markdown problems in README.md (plus some slight wording changes)
-* Re-ordered crosshair commands, they're sorted by length again! 😄
+* Re-ordered crosshair commands, they're sorted by length again!
 * Changed kp_multiply (the asterisk on the numpad) to run exec practice.cfg;
 
 - Removed trailing spaces (spaces at the end of lines) in a couple spots
