@@ -6,6 +6,18 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 0.1.0-rc12
+* Fixed some lines missing semicolons
+* Fixed alignment of section 6.7 comments and section 6.7 binds
+* Fixed some missing semicolons in bind declerations in section 6.4
+* Fixed +taunt not working because they key also called the keycontainer alias
+* Changed cl_training_completed_with_classes comment in section 5.31 to include "16 bit representation:" explanation
+* Clarified sv_alltalk in-line documentation comment to give an alternate explanation
+* Fixed maxplayers convar value not using double quotes in finsfriends.cfg
+* Fixed maxplayers missing in-line documentation
+* Changed fixed_360controller.cfg whitespace
+
+
 ## 0.1.0-rc11
 * Changed G to taunt instead of inspecting your weapon
 
