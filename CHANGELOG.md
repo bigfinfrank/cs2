@@ -5,6 +5,17 @@ The TF2 Config started with my CSGO config 3.0.6 as a base and was edited for TF
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 1.0.0
+```diff
++ Added ./vscode/settings.json that tells Microsoft Visual Studio Code to use LF (unix-style \n) line endings
++ Added ./lists/conds.cfg with a table of all the different addcond/removecond values
+
+* Specified explicitly what files should be considered text in .gitattributes
+* Put CHANGELOG.md 0.1.0-rc11 and 0.1.0-rc12 changes in diff codeblocks
+* Updated launch options
+
+- Removed ./vscode/ folder from .gitignore
+```
 
 ## 0.1.0-rc12
 * Fixed some lines missing semicolons
@@ -19,8 +30,9 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 0.1.0-rc11
+```diff
 * Changed G to taunt instead of inspecting your weapon
-
+```
 
 ## 0.1.0-rc10
 ```diff

@@ -8,10 +8,6 @@ trustedlaunch.cfg
 ## No idea what this is for, seems to store last map and your STEAMID
 qmmconnect.dt
 
-
-# Microsoft Visual Studio Code
-.vscode/
-
 # TF2 Files
 360controller-linux.cfg
 360controller.cfg

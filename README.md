@@ -38,11 +38,11 @@ Mine are specifically setup for my PC (**Seriously, if you use exactly you could
 
 Mine:
 ```code
--no_texture_stream -small -forever -hushsteam -novid -rpt -high -windowed -noborder -refreshrate 144 -maxplayers 255 +exec autoexec.cfg
+-no_texture_stream -small -threads 16 -forever -hushsteam -enablefakeip -novid -gl_enablesamplerobjects -NoQueuedPacketThread -rpt -tickrate 32 -high -windowed -noborder -refreshrate 144 -maxplayers 255 +exec autoexec.cfg
 ```
 Mine without the me-specific options (easy copy-paste):
 ```code
--d3d9ex -no_texture_stream -small -forever -novid -rpt -high -windowed -noborder -maxplayers 255 +exec autoexec.cfg
+-no_texture_stream -small -forever -hushsteam -enablefakeip -novid -gl_enablesamplerobjects -NoQueuedPacketThread -rpt -high -maxplayers 255 +exec autoexec.cfg
 ```
 
 First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts.
@@ -60,8 +60,9 @@ To change your launch options for steam games, the best and easiest way to chang
 
 
 ### What does each option do?
-- `-threads 16` This is the number of threads to allocate for the thread pool, [a Valve Employee recommended against setting this on reddit](https://www.reddit.com/r/GlobalOffensive/comments/5y8r7v/comment/dep5yno) but I do anyways. Don't set it above 16 (otherwise the game crashes randomly after a while) and don't set it above your CPU's thread count.
+- `-no_texture_stream` Disables texture streaming (textures aren't unloaded and reloaded dynamically as you move around a map), better performance with higher VRAM GPUs
 - `-small` Allow window sizing smaller then 640x480, you shouldn't ever go below that resolution but this will *let* you, with some potentially interesting UI consequences.
+- `-threads 16` This is the number of threads to allocate for the thread pool, [a Valve Employee recommended against setting this on reddit](https://www.reddit.com/r/GlobalOffensive/comments/5y8r7v/comment/dep5yno) but I do anyways. Don't set it above 16 (otherwise the game crashes randomly after a while) and don't set it above your CPU's thread count.
 - `-novid` The game's "intro video will not play", this means you'll use a tiny bit less of RAM and you'll get into the main menu a little bit faster with the one con of the game being black until the main menu does load..
 - `-rpt` Clears console.log on startup, logs all console output in console.log, and starts the game with the developer console enabled.
 - `-high` Launches the game with [HIGH_PRIORITY_CLASS in Windows](https://docs.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities), effectively hinting that it should make TF2 a priority over other programs.
