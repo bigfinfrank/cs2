@@ -5,6 +5,15 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 4.0.1
+```diff
+* Fix linting issues in README.md
+* Update config.cfg
+
+! This commit being signed additionally is to verify that the commit for 4.0.0 (d6a67dfd91e402866789c29a89d6e7b49e0437d2) was made by me.
+```
+
+
 ## 4.0.0
 ```diff
 + Added second nag to read the important box at the top of autoexec
