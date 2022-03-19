@@ -7,3 +7,7 @@ trustedlaunch.cfg
 
 ## No idea what this is for, seems to store last map and your STEAMID
 qmmconnect.dt
+
+## Files created by one of my training maps
+prac_cfg_default_post.cfg
+prac_cfg_default_pre.cfg

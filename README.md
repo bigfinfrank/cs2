@@ -34,7 +34,7 @@ Launch options are options you can set that the game will use when it loads.
 
 
 ### What launch options do you use?
-Mine are specifically setup for my PC (**Seriously, if you use exactly you could run into game crashes and screen tearing**), to make it easy there are mine and a freely copy-pastable version below mine. These will look complicated at first but they all just change one thing each so it's not that complicated.
+Mine are specifically setup for my PC (**Seriously, if you use mine exactly you could run into game crashes and screen tearing**), to make it easy there are mine and a freely copy-pastable version below mine. These will look complicated at first but they all just change one thing each so it's not that complicated.
 
 Mine:
 ```code

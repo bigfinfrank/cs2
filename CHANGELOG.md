@@ -5,6 +5,34 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+
+## 4.0.2
+```diff
++ Added configs created by one of my practice maps to .gitignore
++ Updated terminology to align with Google's respectful code style guide
++ Added more ASCII art chat pictures (happy, harder, bongo)
++ Added clanid (steam group clan tag) cycler. By default it cycles through ~12 clanids sorted by length, then it will cycle back through them in reverse order so it loops well visually. (There are an additional 12 interesting clanids you can play with as well).
+!!! You should read the comments underneath 3.3.19.
++ Spray menu and right click now clear decals
++ Added snd_mute_losefocus "0"; so game audio isn't muted while you're tabbed into Discord instead of the game for example.
++ Added aliases/ folder, which list other different lists of cfgs.
++ Added keys/ folder with files to list different parts of your keybinds.
++ Added positions/ folder which has setpos_exact commands to teleport to different places in various different maps.
+
+* Rephrased comments for sv_usercmd_custom_random_seed and mm_dedicated_search_maxping to be more clear
+* Added a comment with *MY* ping to the nearest servers to *ME*.
+* Fixed several typos, made several grammar clean-ups, and some whitespace fixes
+* Fixed exojump alias conflict, it (was previously the same as a built-in command) now has been renamed from exojump to exo.
+* Cleaned up the ASCII art with blank braile characters instead of single dots in some places.
+* Changed alignment for the NCM aliases
+* Renamed cheatstart -> cheaton, cheatend -> cheatoff. working on a reliable way to get these working as well, currently they're still very experimental.
+
+- Removed cl_showpos because Valve blocked it in official servers.
+- Removed anger management hotline because it 1. wasn't international B. was more than just anger management C. Could hold up someone who is directly interested in seeking help because an angry russian is calling.
+- Removed onlyfans bind (alias is still there but I was accidentally pressing it).
+```
+
+
 ## 4.0.1
 ```diff
 * Fix linting issues in README.md
