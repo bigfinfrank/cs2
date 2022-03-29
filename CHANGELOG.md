@@ -6,6 +6,20 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 4.0.3
+```diff
++ Viewmodels are now stored in presets (aliases starting with vmp_ short for ViewModel Presets)
+
+* sv_steamgroup is now automatically cleared at launch
+* +defuse and -defuse now use +use instead of +use_or_reload.
+* +loudshift and -loudshift have both had their volumes increased by 0.025 (2.5%)
+* Fixed missing newlines
+* Fixed numbering on [3.3.19] and [3.3.20] being one ahead (they're now [3.3.18] and [3.3.19])
+* 7.X bind comments about keys being in different sections now use the section number.
+
+```
+
+
 ## 4.0.2
 ```diff
 + Added configs created by one of my practice maps to .gitignore
