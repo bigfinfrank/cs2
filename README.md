@@ -38,11 +38,11 @@ Mine are specifically setup for my PC (**Seriously, if you use mine exactly you 
 
 Mine:
 ```code
--no_texture_stream -d3d9ex -threads 16 -small -forever -novid -gl_enablesamplerobjects -NoQueuedPacketThread -language bigfinfrank -rpt -vcrrecord -tickrate 64 -high -windowed -noborder -refreshrate 144 -maxplayers_override 255 +exec autoexec.cfg +exec clearinputs.cfg
+-small -forever -novid -language fin -rpt -vcrrecord -tickrate 64 -windowed -noborder -maxplayers_override 255 +exec autoexec.cfg
 ```
-Mine without the me-specific options (easy copy-paste):
+Mine without the PC-specific options (easy copy-paste):
 ```code
--no_texture_stream -d3d9ex -small -forever -novid -gl_enablesamplerobjects -NoQueuedPacketThread -language bigfinfrank -rpt -vcrrecord -high -windowed -noborder -maxplayers_override 255 +exec autoexec.cfg +exec clearinputs.cfg
+-small -forever -novid -language fin -rpt -vcrrecord -windowed -noborder -maxplayers_override 255 +exec autoexec.cfg
 ```
 
 First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts.

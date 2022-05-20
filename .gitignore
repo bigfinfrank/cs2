@@ -11,3 +11,6 @@ qmmconnect.dt
 ## Files created by one of my training maps
 prac_cfg_default_post.cfg
 prac_cfg_default_pre.cfg
+
+## Silence video change spam
+video.change*.txt

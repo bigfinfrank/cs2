@@ -5,6 +5,52 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 4.1.0
+```diff
++ .gitignore now ignores video.change*.txt files
++ Now sets steamgroup and clanid to a CFG steam group
++ Added cl_resend "1"; and cl_resend_timeout "30";
++ Added some configurable graphics settings to [2.2] and renamed the section
++ Added missing viewbob adjustment convar
++ Added log settings to [3.0]
++ Added m_yaw explanation and helpful common values
++ Added more view model and view bobbing presets
++ Added a nade crosshair
++ Added a work-in-progress lagswitch alias
++ Added other two radial radio wheels to F1 and F2 and last radio menu to period/full stop
++ Added a bunch of privacy and safety options to make the game more stream friendly, more secure, and generally more private.
++ Added volume slider settings to [10.0] (Finishing Up is now [11.0])
++ Added draco.cfg with competitive 5v5 settings and begin.cfg to start a tournament that's using draco.cfg
++ Added grenade trajectory settings
++ Added gamemodes.cfg with a chart of gamemode settings
+
+* Moved a bunch of convars to the new Privacy & Safety section [9.1]
+* Moved cl_updaterate, cl_cmdrate, sv_minupdaterate, sv_maxupdaterate, sv_minccmdrate
+* Updated in-line documentation comments
+* Change engine_no_focus_sleep from 0 to 1 miliseconds
+* Changed cl_timeout from 30 to 60 seconds
+* Fixed missing semicolon
+* Moved viewbobing options to aliases
+* Fixed some missing/extra whitespace
+* Fixed some missing quotes
+* Increased volume
+* Fixed null cancelling movement
+* Radar is no longer square in the scoreboard
+* First letter of a players color is now shown on their color circles (in chat and on the radar)
+* Changed crosshair to be white and black and change based on weapon.
+* Changed sensitivity to match 25600 DPI to my old 1400 DPI @ 3 sens (and added comment about why and how you can do the conversion)
+* Added some missing comments
+* Made various adjustments to the HUD (including setting the color in [9.0])
+* Updated config.cfg
+* Renamed csgo_bigfinfrank -> csgo_fin
+* Updated README.md with new launch options
+* Updated video.txt settings
+
+- Removed sv_max_allowed_net_graph
+- Removed nonfunctional sv_cheats toggle
+- Removed changed clanid group ID (for "sad" clan tag)
+```
+
 
 ## 4.0.3
 ```diff

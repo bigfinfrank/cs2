@@ -17,7 +17,7 @@
 	"setting.mat_texturestreaming"		"0"
 	"setting.r_player_visibility_mode"		"1"
 	"setauto.mat_enable_uber_shaders"		"1"
-	"setting.defaultres"		"2560"
+	"setting.defaultres"		"1920"
 	"setting.defaultresheight"		"1440"
 	"setting.aspectratiomode"		"0"
 	"setting.fullscreen"		"0"
