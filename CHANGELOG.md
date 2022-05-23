@@ -5,6 +5,19 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 4.1.1
+```diff
++ Added a jump throw bind (capable of left, right, and both-click throws)
++ Made jump binds smarter
+
+* Changed noclip bind from ALT to Z.
+* Fixed some missing whitespace
+* Fixed comment typos
+
+- Removed game insructor and hints toggles from +defuse.
+```
+
+
 ## 4.1.0
 ```diff
 + .gitignore now ignores video.change*.txt files
