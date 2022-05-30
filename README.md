@@ -38,11 +38,11 @@ Mine are specifically setup for my PC (**Seriously, if you use mine exactly you 
 
 Mine:
 ```code
--small -forever -novid -language fin -rpt -vcrrecord -tickrate 64 -windowed -noborder -maxplayers_override 255 +exec autoexec.cfg
+-small -forever -novid -language fin -rpt -vcrrecord -tickrate 64 -windowed -noborder -maxplayers_override 255 +exec ./autoexec.cfg +joingame
 ```
 Mine without the PC-specific options (easy copy-paste):
 ```code
--small -forever -novid -language fin -rpt -vcrrecord -windowed -noborder -maxplayers_override 255 +exec autoexec.cfg
+-small -forever -novid -language fin -rpt -vcrrecord -windowed -noborder -maxplayers_override 255 +exec ./autoexec.cfg +joingame
 ```
 
 First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts.
@@ -76,7 +76,7 @@ Theoretically you could get a slight advantage by setting this above the server 
 - `-refreshrate 144` Forces the game to use a certain refresh rate, you should always set this to your monitor's refresh rate, don't use this as a framerate limiter, use fps_max and fps_max_menu instead. **You probably need to change this** if your monitor's refreshrate isn't set to 144hz in Windows.
 You can check to make sure that you have manually set it (which you need to do on high refresh rate monitors) and that Windows didn't randomly revert it by opening the Settings app, going to Display -> Advanced display -> and making sure Choose a refresh rate is set to the highest it can go to, the number will probably not be a whole number so just round to the nearest one.
 - `-maxplayers_override 255` This sets the maximum players that can be in servers you host to 255 which is the absolute maximum set by the Source Engine. CSGO has it's own limitation that limits this to 64 and without editing `botprofile.db`, `gamemodes.txt`, and `gamemodes_server.txt.example` you can't get above 42 (bots). **You shouldn't need to change this**
-- `+exec autoexec.cfg` This executes autoexec.cfg, this shouldn't be necessary but unless you've done some really weird and exotic modifications it doesn't hurt anything to have it run twice.
+- `+exec ./autoexec.cfg` This executes autoexec.cfg, this shouldn't be necessary but unless you've done some really weird and exotic modifications it doesn't hurt anything to have it run twice.
 
 
 ## Todo List

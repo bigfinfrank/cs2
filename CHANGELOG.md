@@ -5,6 +5,29 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 4.1.2
+```diff
++ Added fin_version alias to [0.0] which can be used to print the current version
++ Added "fin_" in front of all custom aliases
++ Added "fin_visleaf", "fin_verify", and "fin_fpsbugfix" to link to documentation on how far wallhacks can see, how to verify game files, and a fix for the FPS bug that tells teammates how to fix it as well.
++ Added joingame to launch options in README.md to hopefully auto-reconenct to comp matches if you need to restart your CSGO mid game.
+
+* Updated comments in the info box at the top of autoexec.cfg
+* Changed exec commands to use more explicit paths ./
+* Updated mat_queue_priority and mat_queue_mode convars to use their ideal values (see https://www.reddit.com/r/GlobalOffensive/comments/5zkpwn)
+* Updated +fin_defuse alias to try and get around Valve's patch of the bomb finder
+* Fixed some extra spaces in comments
+* Renamed nadecrosshairoff and nadecrosshairon to nadechoff and nacechon respectively
+* Fixed missing spaces between semicolons and the following convars/commands in binds
+* Updated mp_respawnwavetime to use the new separate T and CT convars in practice.cfg
+* Changed from 1920x1440 (1440p 4:3) to 2560x1440 (1440p 16:9 / Native) in video.txt
+* Updated aliases.cfg with new .cfg's from the aliases/ folder
+
+- Removed +inspect alias in favor of directly using +lookatweapon
+- Removed _underscores_ from all aliases (leaving fin_ of course)
+```
+
+
 ## 4.1.1
 ```diff
 + Added a jump throw bind (capable of left, right, and both-click throws)
