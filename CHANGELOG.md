@@ -5,6 +5,36 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+
+# 4.1.3
+```diff
++ Added shorthand alias "bp" for "bot_place"
++ Crouch jump now knows if you're holding down your crouch key and won't uncrouch when you release space if you're holding down crouch.
++ Holding E now makes the scroll wheel spam +use (so you can spam open close doors really fast)
++ Grenade binds now also buy the grenade if you're in spawn and don't already have it
++ Scroll jumping is now disabled while holding left click
++ Added a (currently unassigned) rainbow crosshair set of aliases
++ 1 key is now a hold-for-knife bind
++ If you don't have a gun of a certain slot, the key will automatically equip the next best thing (ex. if you press the key to go to your primary/rifle slot, it'll go to your secondary/pistol). This is mostly useful on pistol rounds
++ Caps lock now toggles r_drawclipbrushes 2 to check if you can reach certain spots in private matches/demos.
+
+* fin_version now echoes the response
+* Moved info box over a few columns
+* Updated some in-line comments
+* Fixed some missing new lines
+* Fixed some extra and some missing whitespace in a few comments
+* Renamed some aliases
+* Vertically aligned some elements
+* Fixed clearchat alias not using fin_ prefix on kp_ins key
+* Playercount HUD position is now at the bottom of the screen
+* Hud scaling is now at exactly 0.5
+* Hud color is now light blue
+* Turned on demo indexing (Skipping forward and especially backwards through demos is SIGNIFICANTLY faster now).
+* Disabled rcon in Privacy & safety settings
+* snd_mixahead is now the exact lowest value I can have it at (with my Corsair Void Pro Wireless)
+```
+
+
 ## 4.1.2
 ```diff
 + Added fin_version alias to [0.0] which can be used to print the current version
