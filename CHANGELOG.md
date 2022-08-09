@@ -6,6 +6,12 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 4.1.4
+```diff
+* Changed bindings to use the Workman Keyboard Layout (https://workmanlayout.org)
+```
+
+
 ## 4.1.3
 ```diff
 + Added shorthand alias "bp" for "bot_place"
