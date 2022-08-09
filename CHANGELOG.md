@@ -5,6 +5,19 @@ The TF2 Config started with my CSGO config 3.0.6 as a base and was edited for TF
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+
+## 1.0.1
+```diff
++ Added mod_load_mesh_async "0" to increase mod compatabilities
+
+* Fixed extra trailing whitespace
+* Changed mat_picmip from "-1" to it's new minimum of "-10". This increases texture quality tremendously on certain models (yes lower is better)
+* Changed bindings to use the Workman Keyboard Layout (https://workmanlayout.org)
+
+- Removed -hushsteam launch option as it blocks you trom playing online.
+```
+
+
 ## 1.0.0
 ```diff
 + Added ./vscode/settings.json that tells Microsoft Visual Studio Code to use LF (unix-style \n) line endings
