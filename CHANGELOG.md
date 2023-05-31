@@ -6,6 +6,46 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 4.2.0
+```diff
++ Added comments under [1.0] listing the different rate values and their bandwidth limits in kbps/mbps
++ Added functional network-only lag switch alias [3.3.19] includes a commented out version with a frame limiter as well which I don't prefer but it provides a greater effect.
++ Added fin_antiafk and fin_antiafk2 alises [3.3.26] to enable and disable an "anti-afk mode" of sorts.
++ Re-added fin_nextxhair (rainbow crosshair cycler) to fin_keycontainer
++ Added sv_reliableavatardata to prevent avatar spoofing
++ Added a "projector slide" click noise that plays whenever the config is (re-)reloaded.
++ Added "grammarly for counter-strike players", spelling-correction aliases for disconnect, exit, and quit so when you're trying to rage quit and you typo it you don't break your keyboard (more than you already have). These are stored in their respective files in ./aliases/grammarly/ and are exec'd in [11.0]
+
+* Bindings no longer use Workman keyboard layout.
+* Changed mm_dedicated_search_maxping to 135
+* Changed net_graph from 2 to 1
+* Adjusted FOV capitalisation so it's consistently uppercase throughout comments
+* Changed fps_max_menu and fps_max from 1000 to 0 to reduce stutter caused by frame limitter overhead
+* Changed capitalisation of aspectRatioWidth and aspectRatioHeight in m_yaw comment to use lowerCamelCase instead of alllowercase
+* Changed overall volume levels from 0.2 and 0.25 while slow walking to 0.1 and 0.15 respectively
+* Fixed +voicerecord usage on the main menu
+* Fixed directory name used in [3.3.15] pointing to ./lists/ instead of ./keys/
+* Fixed [3.3.11] chat aliases and fin_nextxhair, they were broken by the fin_ prefix change introduced in 4.1.2
+* Revised comment for fin_clearchat with clarification for the purpose of "Damage Given" prefacing the arabic characters.
+* Adjusted whitepsace for; fin_knives, fin_noknives, fin_vmpminbob, snd_mixahead, and various lines in [3.3.16], [3.3.18] [3.3.24]
+* Adjusted sensitivity to match my base Valorant sensitivity of 1.0, it's a repeating decimal so I'm storing it to the greatest precision the source engine will allow.
+* A few minor grammatical and 'techincally-correct' changes
+* Changed MOUSE4 from fin_rifle to +voicerecord
+* Changed MOUSE1 to use normal +attack instead of +noscroll_attack
+* Changed some privacy & safety settings to be FaceIT friendly.
+* Disabled main menu music
+* Changed from borderless windowed to exclusive fullscreen
+* The usual config.cfg updates
+* Fixed fpsbugfix.cfg
+
+- Removed comment about my specific ping to Sterling from mm_dedicated_search_maxping line
+- Removed old comment for a work in progress one-button jump throw bind
+- Removed duplicate cl_show_observer_crosshair from [8.0], can be found in [9.1] still.
+- Removed cl_accountprivacysetting1 as Valve removed it at some point
+- Removed cl_righthand "1"; from [11.0]
+```
+
+
 ## 4.1.4
 ```diff
 * Changed bindings to use the Workman Keyboard Layout (https://workmanlayout.org)
