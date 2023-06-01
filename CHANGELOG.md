@@ -5,6 +5,25 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 5.0.0-alpha2
+```diff
+* Changed lines commented out for CS2 reasons to start with //CS2
+* Commented out sv_contact
+* Replaced all instances of r_cleardecals with cl_decal_clear_world
+* Replaced all instances of +/-speed with +/-sprint
+* A few whitespace adjustments
+* Replaced sv_grenade_trajectory with sv_grenade_trajectory_prac_pipreview in practice.cfg
+* Replaced sv_grenade_trajectory_time with sv_grenade_trajectory_prac_trailtime
+```
+
+
+## 5.0.0-alpha1
+```diff
+! Not released, completely broken.
+* Split Autoexec into two halves so that it can be executed fully
+* Removed preemptive clear; of console to prevent console bugs
+```
+
 
 ## 4.2.0
 ```diff
