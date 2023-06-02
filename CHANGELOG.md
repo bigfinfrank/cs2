@@ -5,6 +5,21 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 5.0.0-alpha3
+```diff
++ Added clear.cfg as a functional alternative to the (seemingly broken) clear; concmd
+
+* Rename autoexecX.cfg to autoexec-partX.cfg
+* Commented out several convars removed in CS2
+* Replace all echos with echoln (fixes echo ""; empty newlines)
+* Updated rate comments with up to date information around CS2 rate settings
+* Updated rate to new maximum (from 786432 to 1000000)
+* Updated Lag switch to use new rate minimum and maximum.
+* FIxed accidental "a" at the end of 5.0.0-alpha2 changelog
+* Boolean convars using 1/0 have been migrated to true/false
+```
+
+
 ## 5.0.0-alpha2
 ```diff
 * Changed lines commented out for CS2 reasons to start with //CS2
