@@ -5,6 +5,35 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+## 5.0.0-alpha4
+```diff
++ Rainbow crosshair is now synced with rgbhud (linear rgb version is commented out)
+
+* Fixed cl_interp_ratio being true instead of 1
+* Lower cl_resend from 1 to 0.5
+* Updated sv_minrate/sv_maxrate settings to 1000000 (new max)
+* Disabled sv_lan
+* Changed to 128 tick settings
+* Disabled battery saver and changed on-battery settings to the least restrictive
+* Explicitly set cl_itemimages_dynamically_generated to render item images dynamically when possible
+* Fixed sv_logfile being set to a filename instead of true
+* Set sv_log_onefile to true
+* Moved more CS2-removed commands to comments
+* Updated chat line count comment in 3.3.11 title
+* Fixed chat ASCII art alises to use fin_ prefix
+* Optimized fin_clearchat for CS2
+* Updated RGB Hud to use a better color flow
+* Added comments with cl_hud_color numbers, their colors, and their hex & rgb codes.
+* Fixed addition and removal of nade crosshair in several binds
+
+- Removed broken and obsolete fpsbugfix alias and cfgs
+- Removed jump throw bind
+- Removed buyammo2 bind
+- Removed broken toggle crouch/sprint
+- Removed ping; command from MOUSE3 (latency in console ping command, not player_ping;)
+```
+
+
 ## 5.0.0-alpha3
 ```diff
 + Added clear.cfg as a functional alternative to the (seemingly broken) clear; concmd
