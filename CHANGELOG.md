@@ -5,6 +5,21 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+### 5.0.0-alpha5
+```diff
+* Fixed whitespace alignments
+* Updated inline documentation
+* Moved cl_hud_color comments to [8.0]
+* Updated boolean convars to use true/false in practice.cfg and fixed_controller.360.cfg
+* Changed practice.cfg bot_kick and bot_stop to "all" to be more explicit
+* Changed practice.cfg mp_items_prohibited to "" instead of "0" since it's a list
+* Renamed draco.cfg to tournament.cfg
+* Commented out CS2-removed convars from tournament.cfg
+* Updated gaben.cfg to use echoln instead of echo
+
+- Removed old apply_crosshair_code comment
+```
+
 ## 5.0.0-alpha4
 ```diff
 + Rainbow crosshair is now synced with rgbhud (linear rgb version is commented out)
