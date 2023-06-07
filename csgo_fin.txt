@@ -10,11 +10,11 @@
 {
 // -------------------------------------------------------------------------------------------
 	// MATCH READY BUTTON
-	
+
 		"match_ready_accept"				"DERANK"
-		
+
 	// SKILL GROUPS
-	
+
 		"skillgroup_1"						"Silver 1"
 		"skillgroup_2"						"Silver 2"
 		"skillgroup_3"						"Silver 3"
@@ -35,42 +35,42 @@
 		"skillgroup_18"						"Global Elite"
 
 	// PLAY OPTIONS (MENUS)
-	
+
 		"play_setting_online"				"Online"
 		"play_setting_offline"				"Offline"
 		"play_setting_training_course"		"Training"
 		"play_setting_workshop"				"Workshop"
 		"play_setting_community"			"Community"
-		
+
 	// INVENTORY TEAM INFO
-	
+
 		"CSGO_Inventory_Team_Any"			""
 		"CSGO_Inventory_Team_CT"			""
 		"CSGO_Inventory_Team_T"				""
-		
+
 	// INVENTORY EXTERIOR
-		
+
 		"SFUI_InvTooltip_Wear_Amount_0"		"Factory New"
 		"SFUI_InvTooltip_Wear_Amount_1"		"Minimal Wear"
 		"SFUI_InvTooltip_Wear_Amount_2"		"Field-Tested"
 		"SFUI_InvTooltip_Wear_Amount_3"		"Well-Worn"
 		"SFUI_InvTooltip_Wear_Amount_4"		"Battle-Scarred"
-		
+
 	// NOW PLAYING INFORMATION (IN-GAME)
-	
+
 		"SFUI_NowPlaying_T"					"NEW ROUND"
 		"SFUI_NowPlaying_CT"				"NEW ROUND"
 		"SFUI_Notice_Hint_Bot_Takeover"		"PLAYING AS BOT %s1."
-	
+
 	// WARNING & INFO MESSAGES (IN-GAME)
-		
+
 		"Cstrike_TitlesTXT_Bomb_Defused"	"Bomb defused"
 		"Cstrike_TitlesTXT_Bomb_Planted"	"Bomb planted (%s1 seconds left)"
 		"SFUI_Notice_Got_Bomb"				"You got the bomb."
 		"SFUI_Notice_YouDroppedWeapon"		"Dropped %s1"
-		
+
 	// LOADING SCREEN
-		
+
 		"LoadingProgress_SpawningServer"	"(0%) Starting local game server..."
 		"LoadingProgress_ProcessServerInfo"	"(10%) Retrieving server info..."
 		"LoadingProgress_LoadMap"			"(10%) Loading world..."
@@ -81,50 +81,50 @@
 		"LoadingProgress_SignonLocal"		"(80%) Initializing resources..."
 		"LoadingProgress_SignonData"		"(90%) Retrieving game data..."
 		"LoadingProgress_SignonDataLocal"	"(90%) Initializing game data..."
-		
+
 	// DAMAGE INFO (IN-GAME)
-		
+
 		"Panorama_FreezePanel_DamageTaken"				"<font color='#A0A0A0'>Damage taken:  </font><font color='#ff0000'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> in</font> <font color='#ff0000'><b>{d:hits_taken} hit </b></font> <font color='#A0A0A0'>from {s:killer_name}</font>"
 		"Panorama_FreezePanel_DamageGiven"				"<font color='#A0A0A0'>Damage given:  </font><font color='#00ff00'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> in</font> <font color='#00ff00'><b>{d:hits_given} hit </b></font> <font color='#A0A0A0'>to {s:killer_name}</font>"
 		"Panorama_FreezePanel_DamageTaken_Multi"		"<font color='#A0A0A0'>Damage taken:  </font><font color='#ff0000'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> in</font> <font color='#ff0000'><b>{d:hits_taken} hits </b></font> <font color='#A0A0A0'>from {s:killer_name}</font>"
 		"Panorama_FreezePanel_DamageGiven_Multi"		"<font color='#A0A0A0'>Damage given:  </font><font color='#00ff00'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> in</font> <font color='#00ff00'><b>{d:hits_given} hits </b></font> <font color='#A0A0A0'>to {s:killer_name}</font>"
 		"Panorama_Freeze_Snapshot"						""
-		
+
 	// TARGET PLAYER (IN-GAME)
-	
+
 		"Panorama_HUD_playerid_sameteam"		"<font color='#00ff00'>{s:player_name} - {d:player_health}%</font>"
 		"Panorama_HUD_playerid_diffteam"		"<font color='#ff0000'>{s:player_name}</font>"
-		
+
 	// JOIN MESSAGE (CHAT)
-		
+
 		"Cstrike_game_join_spectators"			"%s1 > Spectators\n"
 		"Cstrike_game_join_terrorist"			"%s1 > 	T\n"
 		"Cstrike_game_join_ct"					"%s1 > CT\n"
-		
+
 	// TEAM ATTACK MESSAGE (CHAT)
-		
+
 		"Cstrike_TitlesTXT_Game_teammate_attack" 		" %s1 attacked a teammate."
-		
+
 	// PLANTING/DEFUSING MESSAGES (CHAT)
-		
+
 		"Cstrike_TitlesTXT_Defusing_Bomb"				"* Defusing *"
 		"Cstrike_TitlesTXT_Planting_Bomb"				"* Planting *"
-		
+
 	// YES/NO RADIO RESPONSE (CHAT)
-	
+
 		"Cstrike_TitlesTXT_Roger_that"					"Yes."
 		"Cstrike_TitlesTXT_Affirmative"					"Yes."
 		"Cstrike_TitlesTXT_Negative"					"No."
-		
+
 	// AWARD MESSAGES (CHAT)
-		
+
 		"Player_Cash_Award_ExplainSuicide_YouGotCash"			"(+$%s2 for the suicide of %s1)"
 		"Player_Cash_Award_ExplainSuicide_TeammateGotCash"		"Teammate %s3 was awarded +$%s2 for the suicide of %s1."
 		"Player_Cash_Award_ExplainSuicide_EnemyGotCash"			"Enemy player was awarded for the suicide of %s1."
 		"Player_Cash_Award_ExplainSuicide_Spectators"			" %s3 was awarded +$%s2 for the suicide of %s1."
-		
+
 	// CASH AWARD MESSAGES (CHAT)
-		
+
 		"Player_Cash_Award_Kill_Teammate"				"-$%s1 • Teamkill"		//Updated 2020-03-25 to "-" instead of "+".
 		"Player_Cash_Award_Killed_Enemy_Generic" 		"+$%s1 • Kill"
 		"Player_Cash_Award_Killed_Enemy"				"+$%s1 • %s2"
@@ -135,7 +135,7 @@
 		"Player_Cash_Award_Respawn"						"+$%s1 • Respawn"
 		"Player_Cash_Award_Get_Killed"					"+$%s1 • Award for being eliminated"
 		"Player_Cash_Award_Damage_Hostage"				"+$%s1 • Hostage wounded"
-		"Player_Cash_Award_Kill_Hostage"				"+$%s1 • Hostage killed"		
+		"Player_Cash_Award_Kill_Hostage"				"+$%s1 • Hostage killed"
 		"Team_Cash_Award_T_Win_Bomb"					"+$%s1 • C4 detonated"
 		"Team_Cash_Award_Elim_Hostage"					"+$%s1 • Team elimination"
 		"Team_Cash_Award_Elim_Bomb"						"+$%s1 • Team elimination"
@@ -153,21 +153,21 @@
 		"Team_Cash_Award_no_income_suicide"				"+$0 • Suicide"
 		"Team_Cash_Award_Generic"						"+$%s1 • Team award"
 		"Team_Cash_Award_Custom"						"+$%s1 • %s2"
-		
+
 	// GRENADE MESSAGES (CHAT)
-		
+
 		"SFUI_TitlesTXT_Fire_in_the_hole" 				"Grenade"
 		"SFUI_TitlesTXT_Molotov_in_the_hole" 			"Molotov"
 		"SFUI_TitlesTXT_Incendiary_in_the_hole" 		"Incendiary"
 		"SFUI_TitlesTXT_Flashbang_in_the_hole" 			"Flash"
 		"SFUI_TitlesTXT_Smoke_in_the_hole" 				"Smoke"
 		"SFUI_TitlesTXT_Decoy_in_the_hole" 				"Decoy"
-		
-		
+
+
 	// ============= VERSION 4.1 ==================================================================
-	
+
 		// DANGER ZONE SKILL GROUPS
-	
+
 		"skillgroup_1dangerzone"			"Lab Rat 1"
 		"skillgroup_2dangerzone"			"Lab Rat 2"
 		"skillgroup_3dangerzone"			"Sprinting Hare 1"
@@ -183,9 +183,9 @@
 		"skillgroup_13dangerzone"			"Ember Wolf"
 		"skillgroup_14dangerzone"			"Wildfire Wolf"
 		"skillgroup_15dangerzone"			"Howling Alpha"
-		
+
 		// DANGER ZONE TABLET
-		
+
 		"TabletBuyMenu"				"[{v:csgo_bind:bind_buymenu}] Map"
 		"TabletHintBuy"				"   [{v:csgo_bind:bind_showscores}] Close"
 		"TabletHintMap"				" "
@@ -197,21 +197,21 @@
 		"TabletNotification_ExplorationPayment_Bonus" "Exploration +${d:exploreprice} & +${d:explorebonus}"
 		"TabletNotification_BombWaveMoney"			"Survival +${d:surviveprice}"
 		"TabletNotification_BombWaveMoney_Bonus"	"Survival +${d:surviveprice} & +${d:survivebonus}"
-		
+
 		// DANGER ZONE SURVIVAL RESPAWN
-		
+
 		"Survival_TeammateRespawned"				"Teammate respawned!"
 		"Survival_RespawnEndWarning"				"Respawn ends in {t:d:timeleft}"
 		"Survival_RespawningDisabled"				"No more respawns!"
 		"Survival_Respawn_Cooldown_Too_Long"		"No more respawns!"
-		
+
 		// TRUST FACTOR WARNING
-		
+
 		"SFUI_QMM_ERROR_X_AccountWarningTrustMinor"	"Beware: %s1 has a lower Trust Factor than yours."
 		"SFUI_QMM_ERROR_X_AccountWarningTrustMajor"	"Warning: %s1 has a much lower Trust Factor than yours."
-		
+
 		// HINT TIPS
-		
+
 		"SFUI_Hint_Accurate_Range"		"Avoid using burst fire-mode on the Famas as it can be more unreliable than practical in duels."
 		"SFUI_Hint_Flashbang_Careful"	"Practice throwing perfectly timed pop-flashes for your teammates so the enemy has no time to react."
 		"SFUI_Hint_BuyArmor"			"You might not need to buy a helmet. If you're up against AK-47s you may want to use that money on a better weapon."
@@ -230,13 +230,13 @@
 		"SFUI_Hint_AvoidWater"			"Water on maps like 'Overpass' make a lot of noise, so avoid stepping on it if you can."
 		"SFUI_Hint_PickupGuns"			"Always ask if someone wants an enemy weapon on the ground that you normally can't buy on your side."
 		"SFUI_Hint_Quote_Claudius1"		"'You are not my friend, you are my brother my friend.'  ~PashaBiceps"
-		
+
 		// LOOKING TO PLAY
-		
+
 		"advertising_for_hire_competitive"					"<img src='file://{images}/icons/ui/competitive.svg' class=''/>Matchmaking"
 		"advertising_for_hire_scrimcomp2v2"					"<img src='file://{images}/icons/ui/scrimcomp2v2.svg' class=''/>Wingman"
 		"advertising_for_hire_survival"						"<img src='file://{images}/icons/ui/survival.svg' class=''/>Danger Zone"
-		
+
 
 // ---------------------------------------------------------------------------------------------
 }

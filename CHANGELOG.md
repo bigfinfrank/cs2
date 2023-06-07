@@ -5,7 +5,13 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
-### 5.0.0-alpha5
+## 5.0.0-alpha6
+```diff
++ Added alias cfg for taking high quality pictures of skins
+* Replaced remaining echo's with echoln
+```
+
+## 5.0.0-alpha5
 ```diff
 * Fixed whitespace alignments
 * Updated inline documentation
