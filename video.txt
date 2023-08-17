@@ -20,6 +20,6 @@
 	"setting.defaultres"		"2560"
 	"setting.defaultresheight"		"1440"
 	"setting.aspectratiomode"		"0"
-	"setting.fullscreen"		"1"
-	"setting.nowindowborder"		"0"
+	"setting.fullscreen"		"0"
+	"setting.nowindowborder"		"1"
 }
