@@ -1,87 +1,131 @@
-# [Fin](https://steamcommunity.com/id/bigfinfrank)'s [CSGO](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive) [Autoexec](https://developer.valvesoftware.com/wiki/Autoexec).[CFG](https://developer.valvesoftware.com/wiki/CFG) and more
+# [Fin](https://steamcommunity.com/id/bigfinfrank)'s [CS2](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive) [Autoexec](https://developer.valvesoftware.com/wiki/Autoexec).[CFG](https://developer.valvesoftware.com/wiki/CFG) and more
 
-This is my CSGO "Config" or as I prefer to call it, my CSGO autoexec. It's what customises my game beyond what the in-game settings UI lets you using automatically run console commands. By design, because you can use it to run any in-game console command as if you opened the console and typed it in, this is insanely powerful.
-One simple example is the (now patched?) CSGO bomb finding bind that turns on the game instructor (the tutorial-esque popups) to show where the bomb is through smokes.
+This is the config I use whenever I play CS2, changing game settings and console variables to match my personal preferences, make quality-of-life changes, and tweaking values for subtle competitive advantages.
 
+## What is a `.cfg` file?
 
-## You lost me at "Autoexec"
-That's totally fine, it's definitely complicated (especially for beginners) and creating your own can be pretty daunting. I'll do my best to use simple and uncomplicated terminology in the explanations below, just please try not to get turned away by the size of the CFGs.
-There's a lot in them but it all breaks down to some pretty simple formatting and everything is organized (and soon documented on each line)
+There are official Valve docs [here](https://developer.valvesoftware.com/wiki/CFG), but in short; it's a text file with a long list of console commands, typically with some blank lines for organisation and some comments that are ignored by the game but help humans understand what different parts of the `.cfg` file are for.
 
+## What makes yours so special?
 
-### CFG Explanation
-CFG is a file type just like `.exe` or `.txt`. When you put a file ending in `.cfg` (i.e. `autoexec.cfg`) in specific folders, CSGO will see that and know that the file has console commands.
-If you're more technically inclined, Valve has a more detailed explanation of these files in their Developer Docs which you check out [here](https://developer.valvesoftware.com/wiki/CFG).
+I tend to be a bit of a control freak when it comes to my games, especially the fine details and tweaking extremely minor things to my liking and to provide a competitive advantage. Since I'm extremely passionate about CS, I've spent a lot of time fine tuning as many options in game as I can and learning the inner workings of the game to the best of my abilities. I've also spent a lot of time looking through information and posts created by the community with creative things to do with configs. Since this is my personal config, I've made it easy for myself (and by proxy, anyone else that uses it) to have everything you could want to change organised and documented with comments, with a lot of fun and complicated tweaks that most people on CS don't even know you can do without cheats. Here's an (probably in-)complete feature list:
 
+- Automatically set Steam group on game start up so you can join your primary group's group-exclusive server.
+- Optimize networking settings for security and performance, slightly reducing network lag and overall giving you a smoother performance by letting your game utilize your internet connection to the best of it's abilities.
+- Apply your favorite viewmodel every time you launch, letting you tweak your gun appearance to take up less of your screen for a competitve advantage, or shift it around to show off your brand new Battle-Scarred P250 Sand Dune.
+- Change your graphics settings to minimize artifical limits on your FPS and avoid power saving modes intended for laptops and portable PCs.
+- Save more information about your game and the lobbies you're playing in to look back at in the future, prove your innocence in community servers, and troubleshoot issues you run into with CS.
+- Make frequent console commands easier with shorthand aliases like `nc` instead of `noclip`, `dc` instead of `disconnect`, and others.
+- Temporarily up max your sensitivity while planting the bomb so you can spin extremely fast making yourself harder to hit, without needing to press a DPI button on your mouse (which also means if you get peaked while planting all you have to do is let go of the spin button, you don't need to press your DPI button again).
+- Automatically show more detailed information about your movement speed, FPS, and networking information when you open up the scoreboard and hiding it away when you close the scoreboard to keeping your screen tidy of unnecessary information when you don't need it, but just a keypress away when you do.
+- Automatically inspect your new Navaja Rust Coat every time you pull it out to show off to your friends.
+- Perfectly crouch jump every single time, without letting your normal crouch key or human error mess anything up.
+- Easily bind something to *every* key, letting you perform actions extremely quickly and often.
+- Hold down on your interact key to change your scrollwheel to interact with doors extremely fast making it difficult for your opponents to hear and potentially impossible for them to get through the door in last alive bomb site situations like on Nuke or Cache.
+- Easily drop yourself Vanilla versions of your favorite knives, danger zone items, and more with simple console commands. From getting your hands on a CT knife while playing as a Terrorist, to bump mines from danger zone, to a Karambit.
+- Increase your volume while slow-walking to hear the sounds around you and know exactly when the enemy starts leaving an area so your team can rush in and take them off guard.
+- Easily paste multi-line copy pastas and ASCII art into chat with all with one key.
+- Quickly and simply change between different tickrate servers, letting you bump your tickrate up or down depending on the third part servers you're using.
+- Null cancelling movement letting you immediately start going left by pressing your `+moveleft` key, without needing to let go off your `+moveright` key first making your split second movement changes harder to predict and counter.
+- Quickly get any all in game actions unstuck with a single command.
+- Post all of your current binds to the in game console in a straightforward, organised layout to share and compare with others.
+- Automatically cycle through your clan tags whenever a key is pressed. People will be wondering how you're doing it while playing and you can rest assured that it uses a safer method of clan tag changing compared to the traditional method of binding forward, back, left, and right to their own exclusive clan tags.
+- Additional viewmodel presets giving you more options to quickly change between in a pinch when you're mid game and feeling off.
+- Automatically enable a longer crosshair, expanding the pips to the edges of the screen so you can easily line up precise grenades with precision.
+- Togglable network "lag switch" letting you temporarily cap your game's bandwidth so you can appear stuttery and harder to hit in low health 1v1 situations.
+- Single-press buy binds to buy a full rifle/AWP loadout instantly.
+- Optionally disable scrollwheel jumping while shooting to retrain yourself to avoid panic jumping at the end of your Silver 1 gunfights.
+- Automatically RGB spectrum cycle your crosshair, or cycle your crosshair in sync with your HUD which can also cycle through the colors of the rainbow.
+- Simple anti-afk bind to type into console during warmup and easily turn off during round 1 freeze time.
+- Customize the minimap radar exactly how you like it and provide the most visiblity of the map that you can.
+- Save your crosshair settings exactly, including ones that aren't saved with the built in crosshair codes feature.
+- Sync your AWP zoom sensitivity with that of your rifles for more consistent flicks.
+- Precisely set your sensitivity so you can always match it no matter that PC you're using.
+- Disable the hints system intended for new players to learn the game, keeping your screen clear of distractions and unnecessary sounds.
+- Edit all of your binds quickly and easily, keyboard row by row, including weird keys from num lock to Windows super keys.
+Change the HUD just how you like it, letting you get your perfect balance between screen space and information.
+- Improve your privacy, safety, and security with settings designed to keep unwanted players out of your parties, keep your game free of unnecessary toxicity, keep inappropriate user generated content off of your stream, and prevent convicted cheaters from joining your private matches.
+- Customize your volume levels so when you start playing CS on a new computer, your ears will already be saved from the notorious menu music.
+- Reduce audio latency, giving you a better chance at stopping a sneaky enemy just in the nick of time.
+- Autocorrect for CS making sure that when you decide to leave a lobby or close the game, a rushed typo won't get in your way, your unbroken monitor will thank you.
+- Included practice config with everything you could want while practicing in official matches solo or with your team.
+- Included tournament config to let you and your friends play in a safe, far, and easy to set up competitive setting with just two commands.
+- Fixed controller support with greater support compared to the Valve default settings.
+- Easily get a list of teleportation commands to get to specific parts of maps. You can use them just to get around quickly or for KZ practice on official maps so you don't have to noclip back after messing the vent hop 10 times in a row.
+- Quick reference lists for other console commands such as game_mode, game_type, and give.
+- And a bunch of other miscellaneous tweaks and optimizations to ensure you're playing at the best level you can be.
 
-### Autoexec Explanation
-Autoexec's are files named `autoexec.cfg` that you have to manually add to one of the game's `cfg/` folders. They're files that CSGO will look for when the game starts and run the commands inside. This lets you automate changing settings, quickly share all of your settings with others, and accomplish some really awesome automation & tricks by using the game's console to our advantage.
-If you're more technically inclined, Valve has an explanation of these files in their Developer Docs which you check out [here](https://developer.valvesoftware.com/wiki/Autoexec).
+## I'm new to this, why would you want a custom config??
 
+Automation and ease of use:
 
-Still have questions? Check the FAQ below and if you still don't have an answer, create an [Issue](https://github.com/bigfinfrank/cfg/issues) and ask me your question!
+- Scenario 1: **A close trusting friend of mine bought a Karambit Fade but has a 1080p monitor and mine is 4K, they want me to enter a private server with them and take screenshots on their account, but I have drastically different keybinds.** It would be extremely cumbersome to change all of my bindings to be able to move around the server and get the screenshots they want manually, storing your keybinds in a config let's you easily apply to them to any account you're using.
+- Scenario 2: **You bought a brand new computer with all new parts and need to fresh install CS.** Instead of fine tuning all of your game settings and keybinds, having to go back and forth between your old and new PC, you can just type "exec autoexec" in console and change everything to exactly how you remember it.
+- Scenario 3: **You use a bind that's more complicated than something as basic as `bind MOUSE1 +attack` like a simple crouch jump bind, requiring you to run some console commands to get it working every time the game launches.** Since all the commands in your `autoexec.cfg` file are run every time the game starts, you can just hop straight into a match and your
+- Scenario 4: **You change a lot of settings in CS and like tweaking values a lot.** Using a config will let you organise the different changes you make into neat categories and easily look through complicated and/or long lists of commands you run to customise your game.
+- Scenario 5: **You want to create something more advanced and complex than a basic bind, but doing everything directly through the console makes it harder**. Using cfg files lets you run console commands without using the console at all, you can type out and edit commands in your favorite (likely more powerful) text editor and then simply launch the game to apply your changes or bind a key to run your `.cfg` file even mid-game.
 
+## Well how do I get set up?
 
-## FAQ
-- **My autoexec isn't working!**
-  Make sure you have `+exec autoexec.cfg` in your [launch options](https://support.steampowered.com/kb_article.php?ref=1040-JWMT-2947) for CSGO
-- **Do I need to use any other launch options?**
-  While you don't *need* to, you can get some extra functionality and potentially performance from some launch options. See the Launch Options section below.
+It's a little daunting at face value, but in reality it's pretty simple to set up your own from scratch or use mine as a base.
 
+1. First, go to this folder `C:\Program Files (x86)\Steam\userdata`, if you have the Steam client itself installed on a different drive, find your `Steam` folder and then find `userdata` within it.
+2. If there's only one folder with a bunch of numbers, enter that one. If you have multiple, you can find the number that's associated with your account in your [trade URL](https://steamcommunity.com/id/bigfinfrank/tradeoffers/privacy#trade_offer_access_url), look for the numbers between `?partner=` and `&token` in the URL and they should match up with one of the ones in your userdata folder.
+3. Find the folder with CS's App ID, `730` and open it, inside `730`, open `local`, and inside `local`, open `cfg`. If you look at the top bar in File Explorer, your folder structure should look something like this `C:\Program Files (x86)\Steam\userdata\123456789\730\local\cfg`.
+4. Either download this GitHub repository and drag the files into this `cfg` folder, or create a new plain text file called `autoexec`, and change the extension from `.txt` to `.cfg`, CS automatically looks for this file when you launch the game and runs the commands within it.
+5. Open up the file and type in `clear; echo My first autoexec just got executed!`, then start up the game.
 
-## Launch Options
-Launch options are options you can set that the game will use when it loads.
+- If you open up the console and scroll to the very top, you should see text saying `My first autoexec just got executed!` and that means you're good to go! Start putting console commands you run in game into your `autoexec.cfg` file and they'll automatically be run every time you launch CS.
+- If you don't see it, double check you spelled everything right and try typing `exec autoexec.cfg` in console, then:
+  - If it says the file doesn't exist, you probably put the file in the wrong folder, or didn't change the extension correctly.
+  - If it clears your console and shows the text, but doesn't do so when the game launches, add `+exec autoexec.cfg` to your [launch options](https://help.steampowered.com/en/faqs/view/7D01-D2DD-D75E-2955) for CS, and try again.
 
+## Is there anyting else to customize after I've got my config set up?
 
-### What launch options do you use?
-Mine are specifically setup for my PC (**Seriously, if you use mine exactly you could run into game crashes and screen tearing**), to make it easy there are mine and a freely copy-pastable version below mine. These will look complicated at first but they all just change one thing each so it's not that complicated.
+There's always more you can do. A few popular ones are:
 
-Mine:
-```code
--small -forever -novid -language fin -rpt -vcrrecord -tickrate 64 -windowed -noborder -maxplayers_override 255 +exec ./autoexec.cfg +joingame
+- [VibranceGUI](https://vibrancegui.com) lets you increase the vibrancy of colors in CS across all maps and UI.
+- [Simple Radar](https://readtldr.gg/simpleradar) removes unnecessary clutter from the minimap and provides cleaner, more distinct outlines of areas on the map.
+- [Improved Radio Mod](https://maximhere.me/modifications) changes the default radio menus to include more options and toggles for some common commands like noclip.
+
+### Launch options
+
+Separate from the above list of plug-and-play tweaks, you can also change your game's launch options to enforce certain settings and help CS behave as you'd like it to on your system, remove some artificial limitations, and add some functionality. Mine are below, along with short descriptions for each of them:
+
+- `-small` Allow window sizing smaller then 640x480
+- `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
+- `-high` Sets the game's priority to High
+- `-d3d9ex` Reduce CPU memory about %40. "csgo" only. (Rumored to be purely placebo, but doesn't cause any harm to include it)
+- `-forever` When you get to the end of the maplist, start over from the top, keeping a game server open indefinitely.
+- `-novideo` When loading a game with this parameter, the intro video will not play.
+- `-nojoy` Disables joystick (controller) support. Theoretically slightly reduces memory usage and fixes a thread starvation lag spike isuse.
+- `-threads 16` Number of threads to allocate for the thread pool, default is 3. Set this to the number of CPU threads your CPU has, up to 16. Above 16 caused random inconsistent crashes on CSGO after playing for a while, so until it has been tested you should assume that values above 16 will also crash CS2.
+- `-nogammaramp` tells CS to use your monitors brightness instead of the in-game brightness level set by yourself.
+- `-language fin` Changes your language to a custom one, mine is a modified version of [Maxim's](https://maximhere.me/modifications).
+- `-rpt` Same as having -condebug, -conclearlog, and -console enabled
+- `-refreshrate 165` Force a specific refresh rate (set this to your monitor's refresh rate)
+- `-vcrrecord latest.vcr` Records a client's game and allows you to play it back and reproduce it exactly.
+- `-tickrate 128` Specifies Server-Tickrate (for more info see Source Multiplayer Networking).
+- `-fullscreen` Forces the engine to start into exclusive fullscreen mode.
+- `-windowed` Forces the game into windowed mode
+- `-noborder` Forces the window to be borderless (used in combination with -windowed for Borderless Windowed)
+- `-pakxv_lowviolence` Changes blood decals to black instead of red
+- `-maxplayers_override 255` Specifies how many player slots the server can contain.
+- `-maxdownloadfilesizemb 32768` CS:GO 5/1/2014, client launch option -maxdownloadfilesizemb N if clients needs to download even larger files from community servers.
+- `+exec ./autoexec.cfg` Executes specific config file immediately after the engine is loaded.
+Or in a single copy & paste-able codeblock:
+
+```txt
+-small -dev -high -d3d9ex -forever -novideo -nojoy -threads 16 -nogammaramp -language fin -rpt -refreshrate 165 -vcrrecord latest.vcr -tickrate 128 -windowed -noborder -pakxv_lowviolence -maxplayers_override 255 -maxdownloadfilesizemb 32768 +exec ./autoexec.cfg
 ```
-Mine without the PC-specific options (easy copy-paste):
-```code
--small -forever -novid -language fin -rpt -vcrrecord -windowed -noborder -maxplayers_override 255 +exec ./autoexec.cfg +joingame
-```
 
-First to get this out of the way, options that start with a `-` are "normal" launch options that change stuff about how the game launches, tell the engine to do a certain thing, or hint to your OS about something. The ones that start with a `+` are simply in-game console commands that will be run as soon as the game starts.
-One example of where this could be useful is if you needed to use sv_cheats commands in your autoexec, you could put `+sv_cheats 1` in your launch options and turn off sv_cheats at the end of your autoexec that way the cheat command is enabled when you launch but if you reload your config in-game it won't disable achievements.
+## To-do List
 
+These are eventual features that don't have a great effort to benefit ratio for my personal use cases, but I'd like to include eventually.
 
-### How do I set launch options?
-To change your launch options for steam games, the best and easiest way to change these is to:
-
-1. Go to your steam Library
-2. In the list of games on the left side of the window, right click the game that you want to change the launch options of
-3. Click "Properties..."
-4. Click the "GENERAL" tab on the left of the popup window
-5. Put your launch options in the "LAUNCH OPTIONS" textbox at the bottom of the popup window
-
-
-### What does each option do?
-
-- `-d3d9ex` Supposedly "reduce CPU memory about %40. 'csgo' only." There was some talk about it being placebo but here's [evidence that says otherwise](https://imgur.com/a/gnEqTT0) from the CSGO source code leak. **You shouldn't need to change this**
-- `-threads 16` This is the number of threads that CSGO should use, a CSGO dev recommends against setting this but I do anyways. **You need to change this** You can either remove it which is what CSGO developers say you should do, otherwise: Don't set it above 16 (otherwise the game crashes randomly) and don't set it above your CPU's thread count.
-- `-small` Removes minimum 640x480 size window size limit for CSGO, this only affects really tiny custom resolutions and windowed mode users who feel like making it so they can't see their game. **You shouldn't need to change this**
-- `-novid` Skips the golden "CSGO" loading text that shows up when you start the game, this can lead to faster game start up times if your computer is fast enough because in some cases the Main Menu will already be done loading and just sitting their waiting for the CSGO logo animation to fade out before the menu pops up.
-- `-language bigfinfrank` This sets the game to use my custom language (based on BananaGaming's Text Color Mod). **You might need to change this** if you use a non-English language in CSGO. If you want to use my language changes, move `csgo_bigfinfrank.txt` to the `Counter-Strike Global Offensive\csgo\resource` folder.)
-- `-rpt` "Same as having -condebug, -conclearlog, and -console enabled". -condebug: Logs all console output into the console.log text file. -conclearlog: Clears the console.log text file on start. Only works if -condebug set. -console: Starts the game with the developer console enabled. Same as having con_enable enabled. **You shouldn't need to change this**
-- `-vcrrecord` "Records a client's game and allows you to play it back and reproduce it exactly." This effectively records a client-side demo that you can play back later. This provides more accurate gameplay (and maybe higher tickrate?) than Valve matchmaking demos because it's recorded directly on your PC. **You might need to change this** if you are really stretched thin on performance.
-- `-tickrate 64` This sets your game's default tickrate to 64. **You might need to change this** if you're playing on higher tickrate servers, for example I believe FACEIT and ESEA use 128 tick servers, so you'd want to set this to 128 instead.
-Theoretically you could get a slight advantage by setting this above the server you're playing on's tickrate because the client and server don't actually sync up and that means that you're checking for updates from the server more often could give you an ever-so-slight advantage (but we're talking about miliseconds here).
-- `-high` Launches the game with the "high" priority in Windows. To put it simply, this hints at windows that it should make CSGO a priority over other programs. **You shouldn't need to change this** but if you're having Discord stop responding or something and you'd rather have a bit lower performance, go ahead and
-- `-windowed` Launches the game in windowed mode, **You might need to change this** if you're using a resolution that isn't your monitor's native one as in most cases you need to be using fullscreen for custom resolutions.
-- `-noborder` Launches the game without a window border, **You might need to change this** if you're using a resolution that isn't your monitor's native one as in most cases you need to be using fullscreen for custom resolutions.
-- `-refreshrate 144` Forces the game to use a certain refresh rate, you should always set this to your monitor's refresh rate, don't use this as a framerate limiter, use fps_max and fps_max_menu instead. **You probably need to change this** if your monitor's refreshrate isn't set to 144hz in Windows.
-You can check to make sure that you have manually set it (which you need to do on high refresh rate monitors) and that Windows didn't randomly revert it by opening the Settings app, going to Display -> Advanced display -> and making sure Choose a refresh rate is set to the highest it can go to, the number will probably not be a whole number so just round to the nearest one.
-- `-maxplayers_override 255` This sets the maximum players that can be in servers you host to 255 which is the absolute maximum set by the Source Engine. CSGO has it's own limitation that limits this to 64 and without editing `botprofile.db`, `gamemodes.txt`, and `gamemodes_server.txt.example` you can't get above 42 (bots). **You shouldn't need to change this**
-- `+exec ./autoexec.cfg` This executes autoexec.cfg, this shouldn't be necessary but unless you've done some really weird and exotic modifications it doesn't hurt anything to have it run twice.
-
-
-## Todo List
-*Help with these would be much appreciated*
-
-+ Implement [BananaGaming's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q&t=0s) (multiple binds per key using key combos)
-+ Figure out what the `S1_UP` and `S2_UP` keys map to physically on controllers
-+ External doumentation (with GitHub Wikis)
+- Make necessary changes for the config to work flawlessly in CS2, removing broken features and making adjustments where necessary.
+  - A state-reset script might be useful in keycontainer, see fin_uninspect
+- External GitHub Wiki documentation.
+- Move CS2 config to it's own repo OR move TF2 and CSGO configs out of this repository.
+- Implement [MrMaxim's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q) allowing you to bind multiple separate actions to the same key and only executing certain actions if a modifier key is held
+- Verify that the `S1_UP` and `S2_UP` keys map to releasing stick buttons on controllers.

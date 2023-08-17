@@ -14,3 +14,7 @@ prac_cfg_default_pre.cfg
 
 ## Silence video change spam
 video.change*.txt
+
+## CS2 files
+user_keys_default.vcfg
+sfm_default_animation_groups.vcfg

@@ -5,13 +5,77 @@ Updates prior to 1.0.15 have not been (and probably won't be) documented.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
+
+## 5.0.0-alpha7
+
+```diff
++ Explciitly marked text file extension formats as text in .gitattributes
++ Added cs2 default configs to .gitignore
++ Added cq_netgraph to fin_scorenet
++ Added fin_uninspect workaround alias to fix knife inpsection (going to trial this concept on other binds)
++ Added fin_thermalpaste chat aliases
++ Added auto inspect functionality to nade crosshair
++ Added timescale adjusetment binds to [, ], \
++ Added cl_silencer_mode "0" to small tweaks
++ Added randomised passwords to Privacy & Safety settings
++ Added volume percentage cheat sheet under "Sliding volume sliders"
+
+* Rewrote README.md
+* Commented out clear cfg execution in autoexec-part1.cfg
+* Updated in-line documentation
+* Updated mat_monitorgamma -> csgo_monitorgamma
+* Adjusted whitespace
+* Fixed loudshift volume values to match CSGO by percentage
+* Changed crosshair
+* Removed .00 from the end of a few whole integers
+* Updated quit_prompt bind to use the new cs_quit_prompt
+* Updated comments
+
+- Removed/replaced/commented out instances of rc and clear decals as they currently don't exist.
+```
+
+
+## 4.2.1
+
+```diff
++ Added cl_connection_trouble_show "1"; to indicate network instability in the top right while playing
++ Added net_steamcnx_enabled "2"; to force use of steam networking to avoid IP leaks
++ Added griefing buy bind to purchase an R8 and "fun" utility.
++ Added fin_streamermode toggle
++ Added fin_toggleinspect alias for take screenshots of skins.
++ Added the three in game screenshot concommands to the F12 key which also takes a steam screenshot
++ Added viewmodel adjustment binds to PGUP/PGDN and numpad number keys 1 through 9
++ Added sv_prime_accounts_only "1" to Privacy & Safety settings.
++ Added server.cfg based off of the old draco.cfg, designed for a private skin inspection server.
++ Added more formatting settings to .vscode/settings.json
++ Added extensions.json with a CFG syntax highlighting recommended extension.
+
+* Changed cl_clanid
+* Lowered mm_dedicated_search_maxping from 135 to 65.
+* Adjusted whitespace
+* Increased loudshift volume by 0.15 (0.15 -> 0.3 and 0.1 -> 0.25)
+* Fixed chat aliases to use fin_ prefix
+* Fixed fin_vmphighfov to use Y offset depth of 2 instead of -2.
+* Changed MOUSE5 to use the griefing buy bind instead of the AWP.
+* Changed video.txt from exclusive fullscreen to borderless windowed.
+* Adjusted CHANGELOG.md for better Markdown compliance.
+
+- Removed fin_clanid from fin_keycontainer.
+- Removed autoknifeinspect from "4" key, replaced with normal slot3 concommand.
+- Removed old tournament-style Draco server config.
+```
+
+
 ## 5.0.0-alpha6
+
 ```diff
 + Added alias cfg for taking high quality pictures of skins
 * Replaced remaining echo's with echoln
 ```
 
+
 ## 5.0.0-alpha5
+
 ```diff
 * Fixed whitespace alignments
 * Updated inline documentation
@@ -26,7 +90,9 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 - Removed old apply_crosshair_code comment
 ```
 
+
 ## 5.0.0-alpha4
+
 ```diff
 + Rainbow crosshair is now synced with rgbhud (linear rgb version is commented out)
 
@@ -56,6 +122,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 5.0.0-alpha3
+
 ```diff
 + Added clear.cfg as a functional alternative to the (seemingly broken) clear; concmd
 
@@ -71,6 +138,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 5.0.0-alpha2
+
 ```diff
 * Changed lines commented out for CS2 reasons to start with //CS2
 * Commented out sv_contact
@@ -83,6 +151,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 5.0.0-alpha1
+
 ```diff
 ! Not released, completely broken.
 * Split Autoexec into two halves so that it can be executed fully
@@ -91,6 +160,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.2.0
+
 ```diff
 + Added comments under [1.0] listing the different rate values and their bandwidth limits in kbps/mbps
 + Added functional network-only lag switch alias [3.3.19] includes a commented out version with a frame limiter as well which I don't prefer but it provides a greater effect.
@@ -131,12 +201,14 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.1.4
+
 ```diff
 * Changed bindings to use the Workman Keyboard Layout (https://workmanlayout.org)
 ```
 
 
 ## 4.1.3
+
 ```diff
 + Added shorthand alias "bp" for "bot_place"
 + Crouch jump now knows if you're holding down your crouch key and won't uncrouch when you release space if you're holding down crouch.
@@ -166,6 +238,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.1.2
+
 ```diff
 + Added fin_version alias to [0.0] which can be used to print the current version
 + Added "fin_" in front of all custom aliases
@@ -189,6 +262,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.1.1
+
 ```diff
 + Added a jump throw bind (capable of left, right, and both-click throws)
 + Made jump binds smarter
@@ -202,6 +276,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.1.0
+
 ```diff
 + .gitignore now ignores video.change*.txt files
 + Now sets steamgroup and clanid to a CFG steam group
@@ -249,6 +324,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.0.3
+
 ```diff
 + Viewmodels are now stored in presets (aliases starting with vmp_ short for ViewModel Presets)
 
@@ -263,6 +339,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.0.2
+
 ```diff
 + Added configs created by one of my practice maps to .gitignore
 + Updated terminology to align with Google's respectful code style guide
@@ -290,6 +367,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.0.1
+
 ```diff
 * Fix linting issues in README.md
 * Update config.cfg
@@ -299,6 +377,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 4.0.0
+
 ```diff
 + Added second nag to read the important box at the top of autoexec
 + Added sv_lan to 1.0 client-side networking
@@ -354,6 +433,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 3.0.5
+
 ```diff
 * Updated warnings at the top of autoexec.cfg
 * Updated ## Contributing wording in README.md
@@ -366,6 +446,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 3.0.4
+
 ```diff
 + Added missing semicolons to the end of commands & convars
 + Added missing "double quotes" around certain values
@@ -380,6 +461,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 3.0.3
+
 ```diff
 + Added qmmconnect.dt to .gitignore
 + Added semicolons to the end of commands & convars
@@ -394,6 +476,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 3.0.2
+
 ```diff
 + Added game_mode 1 and game_type 0 to practice.cfg (this sets the server to competitive)
 + Added launch options (with explanations) to README.md
@@ -415,6 +498,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 3.0.1
+
 ```diff
 + Added practice.cfg, which enables various practice configuration settings
 + Added +loudshift and -loudshift aliases to increase volume while shift-walking
@@ -434,6 +518,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 3.0.0
+
 ```diff
 + Added hostname that credits this project to 0.0
 + Added documentation for every remaining command with an explanation given by Valve
@@ -462,6 +547,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 2.1.0
+
 ```diff
 + Added sv_pure "1" to 0.0 as it's requried to play on any reasonable server including MM
 + Added fixed_controller.360.cfg which is controller.360.cfg with the non-existent convars removed, reducing console clutter
@@ -488,6 +574,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 
 ## 2.0.0
+
 ```diff
 + Added "ahegao" alias which automatically cycles to the next ahegaoN(0-9) alias
 + Added "butt" alias which cycles through the new buttN(0-9) aliases, posting an ASCII art butt
