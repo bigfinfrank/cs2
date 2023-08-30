@@ -36,11 +36,11 @@ Launch options are options you can set that the game will use when it loads.
 Mine are specifically setup for my PC (**Seriously, if you use mine exactly you could run into game crashes and screen tearing**), to make it easy there are mine and a freely copy-pastable version below mine. These will look complicated at first but they all just change one thing each so it's not that complicated.
 
 Mine:
-```
+```launchoptions
 -small -heapsize 16777216 -refresh 165 -forever -novid -rpt -useforcedmparms -noforcemaccel -tickrate 64 -windowed -noborder -high -maxplayers 255 +exec ./autoexec.cfg
 ```
 Mine without the PC-specific options (easy copy-paste):
-```
+```launchoptions
 -small -heapsize 16777216 -forever -novid -rpt -useforcedmparms -noforcemaccel -windowed -noborder -high -maxplayers 255 +exec ./autoexec.cfg
 ```
 
