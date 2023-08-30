@@ -1,16 +1,29 @@
-# Files created automatically by CSGO
+# Files created automatically by Garry's Mod
 
-## Default video settings based on your computer
-videodefaults.txt
-## Information about CSGO's Trust Launch security feature
-trustedlaunch.cfg
+360controller-linux.cfg
+360controller.cfg
+client.vdf
+game.cfg
+listenserver.cfg
+mapcycle.txt
+mount.cfg
+mountdepots.txt
+network.cfg
+server_blacklist.txt
+server.cfg
+server.vdf
+skill_manifest.cfg
+skill.cfg
+skill1.cfg
+skill2.cfg
+skill3.cfg
+undo360controller.cfg
+valve.rc
 
-## No idea what this is for, seems to store last map and your STEAMID
-qmmconnect.dt
+## Default settings
+config_default.cfg
+settings_default.scr
 
-## Files created by one of my training maps
-prac_cfg_default_post.cfg
-prac_cfg_default_pre.cfg
 
 ## Silence video change spam
 video.change*.txt
