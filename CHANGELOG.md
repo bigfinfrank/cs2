@@ -30,3 +30,4 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 * Updated snd_mixahead to severely break audio (see comment)
 
 - Removed numerous convars, cfgs, aliases, and concommands that aren't present in gmod.
+```
