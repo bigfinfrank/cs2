@@ -38,7 +38,7 @@ I tend to be a bit of a control freak when it comes to my games, especially the 
 - Automatically RGB spectrum cycle your crosshair, or cycle your crosshair in sync with your HUD which can also cycle through the colors of the rainbow.
 - Simple anti-afk bind to type into console during warmup and easily turn off during round 1 freeze time.
 - Customize the minimap radar exactly how you like it and provide the most visiblity of the map that you can.
-- Save your crosshair settings exactly, including ones that aren't saved with the built in crosshair codes feature.
+- Save your crosshair settings exactly, including ones that aren't saved with the builtin crosshair codes feature.
 - Sync your AWP zoom sensitivity with that of your rifles for more consistent flicks.
 - Precisely set your sensitivity so you can always match it no matter that PC you're using.
 - Disable the hints system intended for new players to learn the game, keeping your screen clear of distractions and unnecessary sounds.
@@ -126,6 +126,6 @@ These are eventual features that don't have a great effort to benefit ratio for 
 - Make necessary changes for the config to work flawlessly in CS2, removing broken features and making adjustments where necessary.
   - A state-reset script might be useful in keycontainer, see fin_uninspect
 - External GitHub Wiki documentation.
-- Move CS2 config to it's own repo OR move TF2 and CSGO configs out of this repository.
+- Move CS2 config to it's own repository OR move TF2 and CSGO configs out of this repository.
 - Implement [MrMaxim's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q) allowing you to bind multiple separate actions to the same key and only executing certain actions if a modifier key is held
 - Verify that the `S1_UP` and `S2_UP` keys map to releasing stick buttons on controllers.

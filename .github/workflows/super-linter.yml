@@ -14,7 +14,7 @@ name: Linter
 #########################
 # Start the job on push #
 #########################
-on: [ push, pull_request ]
+on: [push, pull_request]
 
 ###############
 # Set the Job #
@@ -36,7 +36,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
       ################################

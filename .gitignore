@@ -15,6 +15,12 @@ prac_cfg_default_pre.cfg
 ## Silence video change spam
 video.change*.txt
 
+# Files created automatically by CS2
+
 ## CS2 files
-user_keys_default.vcfg
 sfm_default_animation_groups.vcfg
+csgo_saved_item_shuffles.txt
+user_keys_default.vcfg
+cs2_video.txt.bak
+cs2_*.vcfg
+cs2_*.txt

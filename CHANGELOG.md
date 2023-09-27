@@ -1,9 +1,23 @@
-# Fin's CSGO Config Changelog
+# Fin's CS2 Config Changelog
 This file contains the changes made version-by-version from newest at the top to oldest at the bottom.
 Updates prior to 1.0.15 have not been (and probably won't be) documented.
 1.0.15 is the first Changelog added and has an incomplete list of changes but the changes still serve as a good example for the diff-like formatting.
 New updates are added as a h2 header (`##`) above the previous version (meaning new versions will always be added to the TOP of this document). Changes to the changelog for a previous version are allowed under the condition that they must be documented in a new update (this means there will be a version bump even if no changes are made to any other files)
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
+
+
+## 5.0.0-alpha8
+```diff
++ Added master volume setting
+
+* Fixed linting issues in FUNDING.yml, super-linter.yml, and README.md
+* Decreased mm_dedicated_search_maxping from 65 -> 25
+* Changed streamer mode privacy settings to false by default as they're broken currently.
+* Updated volume sliders
+
+- Commented out fin_128tick as it's broken currently.
+- Removed fin_nextxhair from fin_keycontainer as it was distracting with the more vivid colors
+```
 
 
 ## 5.0.0-alpha7
