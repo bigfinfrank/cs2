@@ -119,6 +119,33 @@ Or in a single copy & paste-able codeblock:
 -small -dev -high -d3d9ex -forever -novideo -nojoy -threads 16 -nogammaramp -language fin -rpt -refreshrate 165 -vcrrecord latest.vcr -tickrate 128 -windowed -noborder -pakxv_lowviolence -maxplayers_override 255 -maxdownloadfilesizemb 32768 +exec ./autoexec.cfg
 ```
 
+
+small has been removed.
+d3d9ex has been removed.
+forever has been removed.
+novideo has been removed.
+nojoy has been removed.
+nogammaramp has been removed.
+rpt has been removed (subsequently, conclearlog has been removed as well)
+refreshrate has been removed.
+vcrrecord has been removed.
+tickrate has been removed.
+windowed has been removed.
+pakxv_lowviolence has been removed (experimenting with forcing perfectworld)
+maxplayers_override has been removed. (no maxplayers either)
+maxdownloadfilesizemb has been removed.
+
+
+Experimental migration values:
+```
+-dev -devcontent -threads 16 -language textmod -condebug -console -noborder +exec ./autoexec.cfg
+```
+
+favor_consistent_framerate should be experimented with (better fps stability for free?)
+set_power_qos_disable should be experimented with (force disable of in game power optimisation)
+forcenovsync should be experimented with (force disable of vsync graphics settings)
+
+
 ## To-do List
 
 These are eventual features that don't have a great effort to benefit ratio for my personal use cases, but I'd like to include eventually.

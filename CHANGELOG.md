@@ -6,6 +6,43 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-alpha9
+```diff
++ Added cl_showmem to +fin_scorenet
++ Added +fin_jumpfix to remove randomness from bhopping
++ Added fin_onyaw, fin_onpitch, fin_onmousemove as an enhanced "keycontainer" of sorts
++ Added improvised fin_handswap alias
++ Added fin_highveljump to gain faster acceleration when bhopping
++ Added aliases to get each knife in local matches with sv_cheats
++ Added longjump aliases
++ Added null-cancelling movement aliases
++ Added PRINTSCREEN key to row 1 binds
++ Added auto inspect to C4 key
++ Added MOUSE_X and MOUSE_Y to mouse binds
++ Added r_show_build_info "false" and cl_allow_animated_avatars "false" to hud adjustments
++ Added mp_footsteps_serverside "true" and sv_server_verify_blood_on_player "true" to privacy & safety
++ Added sv_ignoregrenaderadio "true" to misc sound settings. This can override the server default if run again after connecting to a server, letting you disable "Fire in the hole" on Valve official servers.s
++ Added r_dof_override_near_blurry "80" to finishing up category to make skin inspection dof a single-convar toggle.
++ Added demo_info, trusted_launch status, and sys_info to end of config debug info dump
++ Added some temporary notes about launch options to README.md
+
+* Updated various documentaiton
+* Disabling physics sleep
+* Disabled server hibernation
+* Re-enabled developer 1
+* Adjusted whitespace & newlines
+* Replaced all instances of +jump with the improved +fin_jumpfix
+* Adjusted SCROLLOCK skin previewing bind
+* Improved clear.cfg to involve the minimal amount of spam.
+* Changed cl_color to green (1)
+* Adjusted autoexec.cfg loader to be single-lined
+* SIGNIFICANTLY refactored practice.cfg, merging changes from the CSGO draco server.cfg as well.
+
+- Removed some convars from skinpictures
+- Removed items folder and it's contents
+```
+
+
 ## 5.0.0-alpha8
 ```diff
 + Added master volume setting
