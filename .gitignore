@@ -24,3 +24,6 @@ user_keys_default.vcfg
 cs2_video.txt.bak
 cs2_*.vcfg
 cs2_*.txt
+
+# Private information file
+private.cfg

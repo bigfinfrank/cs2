@@ -6,6 +6,34 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta1
+```diff
++ Added private.cfg to hold passwords and other sensitive values previously kept in the normal autoexec (hidden by new .gitignore change, please use private.cfg.example as a base for your own configs)
++ Set engine_low_latency_sleep_after_client_tick "true" to help lower frametimes, decrease input latency and improve perceived smoothness (to both ./cfg/ and practice config)
++ Prepended file names to echos in brackets (ex. [file.extension])
++ Added alias for infinite zeus exploit (bound to L by default)
++ Added alias for mid-round refund exploit
++ Added alias for free kevlar exploit
++ Added "desubtick" aliases designed to intercept subtick information
++ Added "Start of <filename>" and "End of <filename>" `echoln`s at the start and end of cfgs
++ Added hostname_in_client_status "false" (to both ./cfg/ and practice config)
++ Added sv_vote_allow_spectators "true, sv_vote_allow_in_warmup "true, and mapgroup "mg_custom" to allow for custom map voting when practice.cfg is used on a server.
++ Added healthshot improvements to practice.cfg
+
+* Updated .gitignore
+* SIGNIFICANTLY rearranged contents of autoexec-part1 and part2 to have all non-alias categories separated into descriptive files in ./cfg/primary/*.cfg
+* SIGNIFICANTLY rearranged contents of autoexec-part1 and part2 to have all alias-declaring categories separated into descriptive files in ./cfg/aliases/*.cfg
+* SIGNIFICANTLY refactored clearinputs.cfg, it now subtractively applies to all known +/- inputs 16 times each to combat the +concommand "stacking" bug(?) in CS2
+* Moved and renamed ./aliases/ folder to ./cfg/utility.
+* Readjusted execs to utilize new layout
+* Replaced instances of default subtick-affected commands with their desubticked variants.
+* Changed from MIT to the Unlicense.
+* Reimplemented mp_forcerespawnaplayers as respawn_player in practice.cfg
+- Removed fin_jumpfix in favor of +/-fin_desubtick_jump (which is functionally identical)
+- Removed sv_game_mode_flags from practice config
+```
+
+
 ## 5.0.0-alpha9
 ```diff
 + Added cl_showmem to +fin_scorenet
