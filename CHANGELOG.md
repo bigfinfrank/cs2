@@ -6,6 +6,34 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta2
+```diff
++ Added status_json, net_status, tv_broadcast_status, tv_status, demo_info, install_dlc_workshoptools_cvar, soundinfo to debug.cfg and practice.cfg
++ Added cl_teamcounter_playercount_instead_of_avatars true to ui.cfg
++ Added ui_steam_overlay_notification_position_horz 80 and _vert 0 to ui.cfg
++ Added voice_always_sample_mic true and voice_threshold 0 to audio.cfg
++ Added cl_debounce_zoom false to controls.cfg
++ Added writekeybindings to the end of loader.cfg
+
+* Standardized newlines and whitespace across cfgs
+* Reordered convars within their subcategories. They're now generally sorted by prefix first (ex sv_), then by line length up to the final semicolon amongst other lines with the same prefix. After being sorted, the groups of lines with identical prefixes are sorted to create the most aesthetically pleasing category for ease of use. Non-informational commented out lines have been moved to the bottom of each respective subcategory, these commented lines are then sorted in accordance with the normal rules, but only relative to other commented lines.
+* Fixed a few instances of missing in-line documentation
+* Changed cl_hud_color to 12
+* Changed hud_scaling from 0.5 to 0.9 as the game clamps the value to a minimum of 0.9 anyways
+* Changed cl_clanid to 42297947 so it matches sv_steamgroup
+* Changed csgo_monitorgamma to r_fullscreen_gamma because valve renamed it
+* Moved engine_low_latency_sleep_after_client_tick from networking.cfg to visuals.cfg
+* Fixed linting error in README.md
+
+- Removed cl_showfps "0" from Finishing up stage so it's state is preserved between config reloads, -fin_scorenet can be used to set it to zero via tab.
+- Removed fin_rgbhud from fin_keycontainer
+- Removed old section numbers from echolns
+- Commented out cl_interp and cl_interp_ratio because they're no longer present.
+- Commented out echolns for sections that were fully commented out otherwise.
+- Commented out hud_reloadscheme because it was given the defensive flag.
+```
+
+
 ## 5.0.0-beta1
 ```diff
 + Added private.cfg to hold passwords and other sensitive values previously kept in the normal autoexec (hidden by new .gitignore change, please use private.cfg.example as a base for your own configs)
@@ -219,7 +247,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 ## 5.0.0-alpha2
 
 ```diff
-* Changed lines commented out for CS2 reasons to start with //CS2
+* Changed lines commented out for CS2 reasons to start with // CS2
 * Commented out sv_contact
 * Replaced all instances of r_cleardecals with cl_decal_clear_world
 * Replaced all instances of +/-speed with +/-sprint

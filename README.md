@@ -38,7 +38,7 @@ I tend to be a bit of a control freak when it comes to my games, especially the 
 - Automatically RGB spectrum cycle your crosshair, or cycle your crosshair in sync with your HUD which can also cycle through the colors of the rainbow.
 - Simple anti-afk bind to type into console during warmup and easily turn off during round 1 freeze time.
 - Customize the minimap radar exactly how you like it and provide the most visiblity of the map that you can.
-- Save your crosshair settings exactly, including ones that aren't saved with the builtin crosshair codes feature.
+- Save your crosshair settings exactly, including ones that aren't saved with the built-in crosshair codes feature.
 - Sync your AWP zoom sensitivity with that of your rifles for more consistent flicks.
 - Precisely set your sensitivity so you can always match it no matter that PC you're using.
 - Disable the hints system intended for new players to learn the game, keeping your screen clear of distractions and unnecessary sounds.
