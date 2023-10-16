@@ -6,6 +6,22 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta3
+```diff
+* Shortened a changelog entry from beta2 to pass markdown linting.
+* Fixed some more linting issues in README.md
+* Fixed newlines
+* Renamed ./prog/binds.cfg and ./prog/core.cfg to prog_binds.cfg and prog_core.cfg respectively
+* Moved ./prog/ & ./keys/ & ./positions/ into ./cfg/
+* Prefixed all remaining echolns echoes with their filename
+* Prepended & appended Start of <filename> & End of <filename> echoes to all remaining cfgs
+* Moved gaben.cfg into ./cfg/utility/
+* Fixed a handful of miscellaneous formatting inconsistencies (missing semicolons at the end of lines, semicolons immediately before closing double quotes, etc)
+
+- Removed tournament.cfg
+```
+
+
 ## 5.0.0-beta2
 ```diff
 + Added status_json, net_status, tv_broadcast_status, tv_status, demo_info, install_dlc_workshoptools_cvar, soundinfo to debug.cfg and practice.cfg
@@ -16,7 +32,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 + Added writekeybindings to the end of loader.cfg
 
 * Standardized newlines and whitespace across cfgs
-* Reordered convars within their subcategories. They're now generally sorted by prefix first (ex sv_), then by line length up to the final semicolon amongst other lines with the same prefix. After being sorted, the groups of lines with identical prefixes are sorted to create the most aesthetically pleasing category for ease of use. Non-informational commented out lines have been moved to the bottom of each respective subcategory, these commented lines are then sorted in accordance with the normal rules, but only relative to other commented lines.
+* Reordered convars within their subcategories. They're now generally sorted by prefix first (ex sv_), then by line length up to the final semicolon amongst other lines with the same prefix.
 * Fixed a few instances of missing in-line documentation
 * Changed cl_hud_color to 12
 * Changed hud_scaling from 0.5 to 0.9 as the game clamps the value to a minimum of 0.9 anyways

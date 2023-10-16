@@ -8,7 +8,9 @@ There are official Valve docs [here](https://developer.valvesoftware.com/wiki/CF
 
 ## What makes yours so special?
 
-I tend to be a bit of a control freak when it comes to my games, especially the fine details and tweaking extremely minor things to my liking and to provide a competitive advantage. Since I'm extremely passionate about CS, I've spent a lot of time fine tuning as many options in game as I can and learning the inner workings of the game to the best of my abilities. I've also spent a lot of time looking through information and posts created by the community with creative things to do with configs. Since this is my personal config, I've made it easy for myself (and by proxy, anyone else that uses it) to have everything you could want to change organised and documented with comments, with a lot of fun and complicated tweaks that most people on CS don't even know you can do without cheats. Here's an (probably in-)complete feature list:
+I tend to be a bit of a control freak when it comes to my games, especially the fine details and tweaking extremely minor things to my liking and to provide a competitive advantage. Since I'm extremely passionate about CS, I've spent a lot of time fine tuning as many options in game as I can and learning the inner workings of the game to the best of my abilities.
+I've also spent a lot of time looking through information and posts created by the community with creative things to do with configs.
+Since this is my personal config,I've made it easy for myself (and by proxy, anyone else that uses it) to have everything you could want to change organised and documented with comments, with a lot of fun and complicated tweaks that most people on CS don't even know you can do without cheats. Here's an (probably in-)complete feature list:
 
 - Automatically set Steam group on game start up so you can join your primary group's group-exclusive server.
 - Optimize networking settings for security and performance, slightly reducing network lag and overall giving you a smoother performance by letting your game utilize your internet connection to the best of it's abilities.
@@ -59,11 +61,11 @@ Change the HUD just how you like it, letting you get your perfect balance betwee
 
 Automation and ease of use:
 
-- Scenario 1: **A close trusting friend of mine bought a Karambit Fade but has a 1080p monitor and mine is 4K, they want me to enter a private server with them and take screenshots on their account, but I have drastically different keybinds.** It would be extremely cumbersome to change all of my bindings to be able to move around the server and get the screenshots they want manually, storing your keybinds in a config let's you easily apply to them to any account you're using.
+- Scenario 1: **A close trusting friend of mine bought a Karambit but has a low res monitor, they want me to enter a private server with them and take screenshots on their account, but I have different keybinds.** Instead of changing all of my bindings to be able to move around manually, storing keybinds in a config let's you easily apply to them to any account you're using.
 - Scenario 2: **You bought a brand new computer with all new parts and need to fresh install CS.** Instead of fine tuning all of your game settings and keybinds, having to go back and forth between your old and new PC, you can just type "exec autoexec" in console and change everything to exactly how you remember it.
 - Scenario 3: **You use a bind that's more complicated than something as basic as `bind MOUSE1 +attack` like a simple crouch jump bind, requiring you to run some console commands to get it working every time the game launches.** Since all the commands in your `autoexec.cfg` file are run every time the game starts, you can just hop straight into a match and your
 - Scenario 4: **You change a lot of settings in CS and like tweaking values a lot.** Using a config will let you organise the different changes you make into neat categories and easily look through complicated and/or long lists of commands you run to customise your game.
-- Scenario 5: **You want to create something more advanced and complex than a basic bind, but doing everything directly through the console makes it harder**. Using cfg files lets you run console commands without using the console at all, you can type out and edit commands in your favorite (likely more powerful) text editor and then simply launch the game to apply your changes or bind a key to run your `.cfg` file even mid-game.
+- Scenario 5: **You want to create something more advanced than a basic bind, but doing everything directly through the console is confusing**. Using cfg files lets you run console commands without the console itself, you can type out and edit commands in your favorite text editor and simply launch the game to apply your changes or bind a key to run your `.cfg` file even mid-game.
 
 ## Well how do I get set up?
 
@@ -137,7 +139,7 @@ maxdownloadfilesizemb has been removed.
 
 
 Experimental migration values:
-```
+```txt
 -dev -devcontent -threads 16 -language textmod -condebug -console -noborder +exec ./autoexec.cfg
 ```
 
