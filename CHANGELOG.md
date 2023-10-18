@@ -6,6 +6,24 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta4
+```diff
++ Added alternate subtick bypass method since Valve patched the alias one.
++ Added cq_netgraph_problem_show_auto true to networking.cfg
++ Added bind to spin while defusing (this needs to be directly bound to a key, by default this is O)
++ Added a bind to do an instant 180 degree turn (this also needs to be directly bound to a key, by default this is P)
++ Re-added section numbers per-file in {curly braces} after the CFG filenames (and updated practice.cfg's because they were still using the old style)
+
+* Updated remaining +/- commands to use their desubticked versions
+* Fixed fin_scoreneton and fin_scorenetoff
+* FIxed echoes in practice.cfg
+* Fixed clear.cfg's first echoln saying "End of" instead of "Start of"
+* Reordered practice.cfg sections slightly
+* Renamed fin_vmp* to fin_vmp_*
+* Moved standard starting column for fin_keycontainer in binds.cfg from column 73 to 93.
+```
+
+
 ## 5.0.0-beta3
 ```diff
 * Shortened a changelog entry from beta2 to pass markdown linting.

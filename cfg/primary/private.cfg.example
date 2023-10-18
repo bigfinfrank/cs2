@@ -2,10 +2,10 @@ echoln "[private.cfg] Start of private.cfg";
 
 
 
-echoln "[private.cfg] Setting private server connection alias";
+echoln "[private.cfg] {1} Setting private server connection alias";
 alias "fin_prac" "hideconsole; rcon_password DkV%teKUVY$sN5NgBihttl1z4MX$wm; password @BCU&Ip08!3@pglol2iUu54WTLpxR0mpn; connect example.com; clear";
 
-echoln "[private.cfg] Setting passwords";
+echoln "[private.cfg] {2} Setting passwords";
 tv_relaypassword "##bbsbK5i9jp^fwGo^#WHXke$!wH4BOBgbS3pl";      // GOTV password for relay proxies
 tv_password "RtrxT8P3nc34AtpC1Q43&pwvQP*";                      // GOTV password for all clients
 password "%k#evFkMp75&1N8TFGwskvukG9s^NXLo@q";                  // Current server access password (changed for every CFG release)
