@@ -118,29 +118,193 @@ Separate from the above list of plug-and-play tweaks, you can also change your g
 Or in a single copy & paste-able codeblock:
 
 ```txt
--small -dev -high -d3d9ex -forever -novideo -nojoy -threads 16 -nogammaramp -language fin -rpt -refreshrate 165 -vcrrecord latest.vcr -tickrate 128 -windowed -noborder -pakxv_lowviolence -maxplayers_override 255 -maxdownloadfilesizemb 32768 +exec ./autoexec.cfg
+-high -promptperfectworld -dev -devcontent -threads 24 -language textmod -condebug -console +exec ./boot.cfg; +exec ./autoexec.cfg;
 ```
 
-
-small has been removed.
-d3d9ex has been removed.
-forever has been removed.
-novideo has been removed.
-nojoy has been removed.
-nogammaramp has been removed.
-rpt has been removed (subsequently, conclearlog has been removed as well)
-refreshrate has been removed.
-vcrrecord has been removed.
-tickrate has been removed.
-windowed has been removed.
-pakxv_lowviolence has been removed (experimenting with forcing perfectworld)
-maxplayers_override has been removed. (no maxplayers either)
-maxdownloadfilesizemb has been removed.
-
-
-Experimental migration values:
+Full list of launch options extracted from engine2.dll via `strings`:
 ```txt
--dev -devcontent -threads 16 -language textmod -condebug -console -noborder +exec ./autoexec.cfg
+-1080
+-1600
+-32bit
+-64bit
+-adapter
+-addhltv1
+-addon
+-addon_path
+-allocfailmb
+-allocwarnmb
+-allow_exe_in_build_dir
+-allow_no_lobby_connect
+-allow_non_tools_paths
+-allowdebug
+-appidoverride
+-asset
+-asyncconsole
+-attachtodebugger
+-auto -title "auto_bug %04d-%02d-%02d %02d:%02d:%02d"
+-bench
+-benchframes
+-benchnoexit
+-benchnote
+-benchtime
+-BH>t
+-bigwindow
+-border
+-breakimmediately
+-bugvoice
+-buildcubemaps
+-clientonly
+-comment
+-component
+-con_logfile
+-condebug
+-conrotate
+-console
+-consoleapp
+-consolelog
+-consolelog_append
+-consolelog_notimestamp
+-consolelog_rotate
+-contentroot
+-coop_fullscreen
+-dac_offline
+-dedicated
+-demo_upconvert
+-devcontent
+-diff
+-DoNotPreloadDLLs
+-dumpvidmemstats
+-dx11
+-dxlevel
+-dxwarp
+-empty
+-enablepassiveasserts
+-error_if_idle
+-favor_consistent_framerate
+-flushlog
+-force_new_recommend
+-forcenovsync
+-fpexcept
+-framesamples
+-full_memory_dumps
+-full_render_callback_clear
+-fullscreen
+-game
+-gpuraytracing
+-gtpoollimitexec
+-gtpoolstacksize
+-heapcheck
+-height
+-hideconsole
+-high
+-highdpi
+-ignoreassertafterminidump
+-insecure
+-insecure_forced_by_launcher
+-instance
+-ioidlecheck
+-language
+-launcherlanguage
+-launchersublanguage
+-mainthreadpriority
+-msaa
+-multiplier
+-netconpassword
+-netconport
+-netspike
+-NETWORK_DISCONNECT_DIRECT_CONNECT_RESERVATION
+-NETWORK_DISCONNECT_KICKED_COMPETITIVECOOLDOWN
+-NETWORK_DISCONNECT_LOCALPROBLEM_NETWORKCONFIG
+-NETWORK_DISCONNECT_REJECT_INVALIDSTEAMCERTLEN
+-no_tools_ignorechildprocess_env
+-noassetbrowser
+-noborder
+-nobreakpad
+-nodedicatedconsole
+-nodev
+-nohltv
+-nolod
+-nomaster
+-nominidumps
+-nopassiveasserts
+-noperfectworld
+-noPriorityBoost
+-nopvs
+-nosound
+-nosse4
+-notoolsdev
+-novalveds
+-novconsole
+-novpk
+-novsync
+-nowindow
+-panoconsole
+-pdiff
+-perfectworld
+-port
+-product
+-profilemapload
+-profilemapload_noquit
+-promptperfectworld
+-publiccontent
+-quitonservershutdown
+-recordPerfStats
+-rendersystemdll
+-report
+-reservewarnmb
+-resizing
+-rs_recommend_gen
+-rs_reset
+-safe_mode
+-sdl_displayindex
+-serverlogging
+-servertime
+-set_power_qos_disable
+-showasserts
+-skip_driver_check
+-snallownoauth
+-snap
+-spewserializers
+-sse2
+-sse3
+-sse4
+-steam
+-steamhdl_immediatelogin
+-steamhdl_init
+-steamhdl_password
+-steamhdl_steamguard
+-steamhdl_steamguard_email
+-steamhdl_user
+-steamlogin_accesscode
+-steamlogin_authority
+-stringtabledebug
+-subprocess
+-textlanguage
+-textsublanguage
+-threads
+-toconsole
+-tool
+-tools
+-toolsonly
+-tournament
+-tournament_extra_casters_slots
+-tvmasteronly
+-tvprimaryonly
+-unbufferedio
+-useappid
+-usebuildversion
+-uselogdir
+-usePriorityBoost
+-usercon
+-valveserver
+-vconport
+-vconsole
+-vsync
+-vulkan
+-warmtime
+-width
+-worldwide
+-YA1H
 ```
 
 favor_consistent_framerate should be experimented with (better fps stability for free?)
@@ -153,7 +317,7 @@ forcenovsync should be experimented with (force disable of vsync graphics settin
 These are eventual features that don't have a great effort to benefit ratio for my personal use cases, but I'd like to include eventually.
 
 - Make necessary changes for the config to work flawlessly in CS2, removing broken features and making adjustments where necessary.
-  - A state-reset script might be useful in keycontainer, see fin_uninspect
+  - [ ] Need to find a way to get the scoreboard working during halftime swap animation.
 - External GitHub Wiki documentation.
 - Move CS2 config to it's own repository OR move TF2 and CSGO configs out of this repository.
 - Implement [MrMaxim's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q) allowing you to bind multiple separate actions to the same key and only executing certain actions if a modifier key is held

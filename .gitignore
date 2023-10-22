@@ -25,5 +25,6 @@ cs2_video.txt.bak
 cs2_*.vcfg
 cs2_*.txt
 
-# Private information file
+# Private information files
 private.cfg
+server_secrets.cfg

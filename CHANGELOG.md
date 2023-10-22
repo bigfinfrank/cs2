@@ -6,6 +6,31 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta5
+```diff
++ Added fin_vmp_knife and set weapon slot keys to change viewmodel.
++ Added sv_unify_random_seed true to networking.cfg and practice.cfg
++ Added script_reload_code "kz" to practice.cfg to load kz script (https://github.com/bigfinfrank/cs2-kz-lua)
++ Added fix_mouse2.cfg and unfix_mouse2.cfg to ./cfg/utility/hardcode_fixes/ to fix interaction with UI elements that are hardcoded to listen for keys directly bound with +attack2
++ Added +/-bugvoice and +/-quickgearradial to ./cfg/aliases/desubtick/ folder with their own CFGs, aliases_controls.cfg with their shorthand fin_deubsticked_* aliases, and to aliases_init.cfg with their fin_clear_* aliases.
++ Added sv_invites_only_mainmenu (separate from cl_invites_only_mainmenu) to safety.cfg and practice.cfg
++ Added bind for the menu key (APP) to binds.cfg (and updated 60percentrow6.cfg)
++ Added server_secrets.cfg.example and added server_secrets.cfg to .gitignore
++ Added boot.cfg which is intended to be executed via a launch option once, allowing you to execute certaing things on game start, but not on autoexec reload.
+
+* Added (un)fix_mouse2.cfg to scorenet and spray_menu
+* Fixed some missing/extra newlines and whitespace
+* Fixed fin_gaben
+* Fixed a few aliases still using non-desubticked variants of their +/- concommands
+* Tweaked some comments
+* Removed extra [loader.cfg] in an echoln
+* Various updates to README.md
+
+- Removed fin_uninspect in favor of fin_clear_lookatweapon
+- Commented out soundinfo concommand in practice.cfg because it was causing crashes when run with -dedicated.
+```
+
+
 ## 5.0.0-beta4
 ```diff
 + Added alternate subtick bypass method since Valve patched the alias one.
