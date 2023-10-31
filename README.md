@@ -94,223 +94,28 @@ There's always more you can do. A few popular ones are:
 
 Separate from the above list of plug-and-play tweaks, you can also change your game's launch options to enforce certain settings and help CS behave as you'd like it to on your system, remove some artificial limitations, and add some functionality. Mine are below, along with short descriptions for each of them:
 
-- `-small` Allow window sizing smaller then 640x480
-- `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
 - `-high` Sets the game's priority to High
-- `-d3d9ex` Reduce CPU memory about %40. "csgo" only. (Rumored to be purely placebo, but doesn't cause any harm to include it)
-- `-forever` When you get to the end of the maplist, start over from the top, keeping a game server open indefinitely.
-- `-novideo` When loading a game with this parameter, the intro video will not play.
-- `-nojoy` Disables joystick (controller) support. Theoretically slightly reduces memory usage and fixes a thread starvation lag spike isuse.
-- `-threads 16` Number of threads to allocate for the thread pool, default is 3. Set this to the number of CPU threads your CPU has, up to 16. Above 16 caused random inconsistent crashes on CSGO after playing for a while, so until it has been tested you should assume that values above 16 will also crash CS2.
-- `-nogammaramp` tells CS to use your monitors brightness instead of the in-game brightness level set by yourself.
-- `-language fin` Changes your language to a custom one, mine is a modified version of [Maxim's](https://maximhere.me/modifications).
-- `-rpt` Same as having -condebug, -conclearlog, and -console enabled
-- `-refreshrate 165` Force a specific refresh rate (set this to your monitor's refresh rate)
-- `-vcrrecord latest.vcr` Records a client's game and allows you to play it back and reproduce it exactly.
-- `-tickrate 128` Specifies Server-Tickrate (for more info see Source Multiplayer Networking).
-- `-fullscreen` Forces the engine to start into exclusive fullscreen mode.
-- `-windowed` Forces the game into windowed mode
-- `-noborder` Forces the window to be borderless (used in combination with -windowed for Borderless Windowed)
-- `-pakxv_lowviolence` Changes blood decals to black instead of red
-- `-maxplayers_override 255` Specifies how many player slots the server can contain.
-- `-maxdownloadfilesizemb 32768` CS:GO 5/1/2014, client launch option -maxdownloadfilesizemb N if clients needs to download even larger files from community servers.
-- `+exec ./autoexec.cfg` Executes specific config file immediately after the engine is loaded.
+- `-mainthreadpriority` TODO: ADD DOCUMENTATION (likely from microsoft docs)
+- `-set_power_qos_disable` TODO: ADD DOCUMENTATION (likely from microsoft docs)
+- `-sse4` TODO: ADD DOCUMENTATION (likely need wikipedia reference)
+- `-usePriorityBoost` TODO: ADD DOCUMENTATION (likely from microsoft docs)
+- `-threads 16` Number of threads to allocate for the thread pool, default is 3. Set this to the number of CPU threads your CPU has. Going above 16 crashed on CSGO but I haven't experienced any issues on CS2 thus far.
+- `-promptperfectworld` TODO: ADD DOCUMENTATION (likely from patchnotes)
+- `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
+- `-devcontent` TODO: ADD DOCUMENTATION
+- `-language` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
+- `-condebug` TODO: ADD DOCUMENTATION (likely from patchnotes)
+- `-console` TODO: ADD DOCUMENTATION
+- `+exec` Since this starts with a + this just means it'll run whatever comes afterwards as a console command as soon as the game launches.
+
 Or in a single copy & paste-able codeblock:
 
 ```txt
--high -promptperfectworld -dev -devcontent -threads 24 -language textmod -condebug -console +exec ./boot.cfg; +exec ./autoexec.cfg;
+-high -mainthreadpriority 2 -set_power_qos_disable -sse4 -usePriorityBoost -threads 24 -promptperfectworld -dev -devcontent -language textmod -condebug -console +exec ./boot.cfg; +exec ./autoexec.cfg;
 ```
 
-Full list of launch options extracted from engine2.dll via `strings`:
-```txt
--1080
--1600
--32bit
--64bit
--adapter
--addhltv1
--addon
--addon_path
--allocfailmb
--allocwarnmb
--allow_exe_in_build_dir
--allow_no_lobby_connect
--allow_non_tools_paths
--allowdebug
--appidoverride
--asset
--asyncconsole
--attachtodebugger
--auto -title "auto_bug %04d-%02d-%02d %02d:%02d:%02d"
--bench
--benchframes
--benchnoexit
--benchnote
--benchtime
--BH>t
--bigwindow
--border
--breakimmediately
--bugvoice
--buildcubemaps
--clientonly
--comment
--component
--con_logfile
--condebug
--conrotate
--console
--consoleapp
--consolelog
--consolelog_append
--consolelog_notimestamp
--consolelog_rotate
--contentroot
--coop_fullscreen
--dac_offline
--dedicated
--demo_upconvert
--devcontent
--diff
--DoNotPreloadDLLs
--dumpvidmemstats
--dx11
--dxlevel
--dxwarp
--empty
--enablepassiveasserts
--error_if_idle
--favor_consistent_framerate
--flushlog
--force_new_recommend
--forcenovsync
--fpexcept
--framesamples
--full_memory_dumps
--full_render_callback_clear
--fullscreen
--game
--gpuraytracing
--gtpoollimitexec
--gtpoolstacksize
--heapcheck
--height
--hideconsole
--high
--highdpi
--ignoreassertafterminidump
--insecure
--insecure_forced_by_launcher
--instance
--ioidlecheck
--language
--launcherlanguage
--launchersublanguage
--mainthreadpriority
--msaa
--multiplier
--netconpassword
--netconport
--netspike
--NETWORK_DISCONNECT_DIRECT_CONNECT_RESERVATION
--NETWORK_DISCONNECT_KICKED_COMPETITIVECOOLDOWN
--NETWORK_DISCONNECT_LOCALPROBLEM_NETWORKCONFIG
--NETWORK_DISCONNECT_REJECT_INVALIDSTEAMCERTLEN
--no_tools_ignorechildprocess_env
--noassetbrowser
--noborder
--nobreakpad
--nodedicatedconsole
--nodev
--nohltv
--nolod
--nomaster
--nominidumps
--nopassiveasserts
--noperfectworld
--noPriorityBoost
--nopvs
--nosound
--nosse4
--notoolsdev
--novalveds
--novconsole
--novpk
--novsync
--nowindow
--panoconsole
--pdiff
--perfectworld
--port
--product
--profilemapload
--profilemapload_noquit
--promptperfectworld
--publiccontent
--quitonservershutdown
--recordPerfStats
--rendersystemdll
--report
--reservewarnmb
--resizing
--rs_recommend_gen
--rs_reset
--safe_mode
--sdl_displayindex
--serverlogging
--servertime
--set_power_qos_disable
--showasserts
--skip_driver_check
--snallownoauth
--snap
--spewserializers
--sse2
--sse3
--sse4
--steam
--steamhdl_immediatelogin
--steamhdl_init
--steamhdl_password
--steamhdl_steamguard
--steamhdl_steamguard_email
--steamhdl_user
--steamlogin_accesscode
--steamlogin_authority
--stringtabledebug
--subprocess
--textlanguage
--textsublanguage
--threads
--toconsole
--tool
--tools
--toolsonly
--tournament
--tournament_extra_casters_slots
--tvmasteronly
--tvprimaryonly
--unbufferedio
--useappid
--usebuildversion
--uselogdir
--usePriorityBoost
--usercon
--valveserver
--vconport
--vconsole
--vsync
--vulkan
--warmtime
--width
--worldwide
--YA1H
-```
-
-favor_consistent_framerate should be experimented with (better fps stability for free?)
-set_power_qos_disable should be experimented with (force disable of in game power optimisation)
-forcenovsync should be experimented with (force disable of vsync graphics settings)
-
+- `-favor_consistent_framerate` should be experimented with (better fps stability for free?)
+- `-forcenovsync` should be experimented with (force disable of vsync graphics settings)
 
 ## To-do List
 

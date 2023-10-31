@@ -6,6 +6,46 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta6
+```diff
++ Added sv_playerradio_use_allowlist to practice.cfg and safety.cfg
++ Added sv_radio_throttle_window to practiec.cfg to disable radio command limits
++ Added jumpbug alias
++ Added rainbow crosshair aliases set to fin_task9 (triggered on mouse movement) in aliases_ui.cfg and ./cfg/aliases/rainbow_crosshair/
++ Added experimental fin_blockscreen alias to aliases_ui.cfg to prevent spectators with cl_show_observer_crosshair 2 (and sometimes 1) from seeing your screen.
++ Added snd_headphone_eq "1" to audio.cfg
++ Added cl_radial_radio_tap_to_ping to ui.cfg
++ Added crosshair true and fin_blockscreen_on beneath crosshair settings in ui.cfg
++ Added safezonex and safezoney both set to 0.9 to visuals.cfg
++ Added panorama_max_fps and panorama_max_overlay_fps to visuals.cfg
++ Added cl_ragdoll_limit -1 to visuals.cfg
++ Added cl_drawhud false, cl_draw_only_deathnotices true, cl_drawhud_force_teamid_overhead -1, crosshair false, and r_show_build_info false to skinpictures.cfg
+
+* Fixed extra newlines in a few places
+* Changed practice config server_secrets.cfg location
+* Changed practice.cfg bot_quota_mode from match to normal
+* Updated launch options with some significant
+* Adjusted whitespace and new lines throughout
+* Renamed fin_desubtick_jumped back to fin_jumped (accidentally renamed it with a ctrl + h in the project before)
+* Properly named null cancel movement aliases
+* Reordered various aliases within their same respective files
+* Shortened reddit links in credit comments
+* Renamed fin_yawpitch and fin_pitchoverride to fin_override_yaw and fin_override_pitch respectively
+* Changed the way nade crosshairs size multiplication is handled
+* Updated crosshair
+* Fixed desubtick aliases again, and added a backup method that only works for actions that don't need to be held.
+* Fixed +bugvoice missing the .cfg file extension in ./cfg/aliases/desubticked/
+* Fixed missing semicolons after some convars
+* Changed r_show_build_info from false to true to see the added debug info
+* Changed r_fullscreen_gamma from 1.6 to 2.2
+
+- Removed old files from CSGO, leaked builds, and limited test. (config.cfg, csgo_fin.cfg)
+- Removed unused/redundant movement aliases
+- Removed fin_clear_lookatweapon from G key (+lookatweapon) to hopefully fix some weird inspect edge cases
+- Removed temp.cfg
+```
+
+
 ## 5.0.0-beta5
 ```diff
 + Added fin_vmp_knife and set weapon slot keys to change viewmodel.
