@@ -103,6 +103,8 @@ Separate from the above list of plug-and-play tweaks, you can also change your g
 - `-promptperfectworld` TODO: ADD DOCUMENTATION (likely from patchnotes)
 - `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
 - `-devcontent` TODO: ADD DOCUMENTATION
+- `-forcenovsync` Force disables vsync (which you should always have off anyways)
+- `-favor_consistent_framerate` Seems to be making the game feel smoother for me with a mild decrease in framerate (280-320 from 300-350), not seeing a noticeable consistency bump in frametimes though so could be placebo.
 - `-language` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
 - `-condebug` TODO: ADD DOCUMENTATION (likely from patchnotes)
 - `-console` TODO: ADD DOCUMENTATION
@@ -111,11 +113,9 @@ Separate from the above list of plug-and-play tweaks, you can also change your g
 Or in a single copy & paste-able codeblock:
 
 ```txt
--high -mainthreadpriority 2 -set_power_qos_disable -sse4 -usePriorityBoost -threads 24 -promptperfectworld -dev -devcontent -language textmod -condebug -console +exec ./boot.cfg; +exec ./autoexec.cfg;
+-high -mainthreadpriority 2 -set_power_qos_disable -sse4 -usePriorityBoost -threads 24 -promptperfectworld -dev -devcontent -forcenovsync -favor_consistent_framerate -language textmod -condebug -console +exec ./boot.cfg; +exec ./autoexec.cfg;
 ```
 
-- `-favor_consistent_framerate` should be experimented with (better fps stability for free?)
-- `-forcenovsync` should be experimented with (force disable of vsync graphics settings)
 
 ## To-do List
 
@@ -127,3 +127,25 @@ These are eventual features that don't have a great effort to benefit ratio for 
 - Move CS2 config to it's own repository OR move TF2 and CSGO configs out of this repository.
 - Implement [MrMaxim's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q) allowing you to bind multiple separate actions to the same key and only executing certain actions if a modifier key is held
 - Verify that the `S1_UP` and `S2_UP` keys map to releasing stick buttons on controllers.
+- Experiment with all of the following:
+  - cl_borrow_music_from_player_slot
+  - cl_versus_intro
+  - sv_versus_screen_scene_id
+  - closecaption
+  - commentary
+  - cl_error_report_time 10
+  - dev_add_onground_on_spawn
+  - dota_enable_spatial_audio
+  - dota_spatial_audio_mix
+  - enable_boneflex
+  - fs_report_sync_opens
+  - snd_steamaudio_enable_perspective_correction
+  - snd_steamaudio_enable_reverb
+  - snd_steamaudio_reverb_level_db
+  - sv_matchend_drops_enabled
+  - sv_merge_changes_after_tick_with_calcdelta 2
+  - sv_parallel_sendsnapshot 2/3
+  - sv_pause_on_console_open
+  - sv_pure_trace
+  - sv_show_teammate_death_notification
+  - voice_test_log_send

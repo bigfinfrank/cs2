@@ -6,6 +6,45 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta7
+```diff
++ Added cl_drawhud_force_deathnotices, cl_drawhud_force_radar, hidehud, spec_hide_players, hud_showtargetid, cl_drawhud_specvote, to ui.cfg and skinpictures.cfg
++ Added r_dof_override false and r_player_visibility_mode 1 to visuals.cfg
++ Added cl_server_graphic1_enable and cl_server_graphic2_enable
++ Added cl_new_user_phase -1 to init.cfg
++ Added tv_relayvoice, tv_relayradio, and tv_show_allchat (all false) as well as cl_chatfilters (default all-on) to safety.cfg,
++ Added ignorerad and ignoremsg bound to F7 and F8 respectively
++ Added cl_dm_buyrandomweapons to misc.cfg
++ Added hud_fastswitch 1, cl_inventory_debug_tooltip true, and cl_inventory_saved_filter2/cl_inventory_saved_sort2 to ui.cfg with documentation comments
++ Added "cyclevar fps_max 0 32" as a bind to "Q", allowing for infinite perfect bunnyhops.
++ Added hostname, name, tv_name, and tv_title to debug.cfg
++ Added mouse_inverty, option_duck_method false, option_speed_method false, and cl_scoreboard_mouse_enable_binding +fin_desubtick_attack2 to controls.cfg
++ Added snd_spatialize_lerp (L/R Isolation) to audio.cfg
++ Added mp_logdetail 3, mp_logmoney true, and mp_logdetail_items true to practice.cfg and misc.cfg
++ Added nextmap_print_enabled false to safety.cfg and practice.cfg
++ Added mp_spectators_max 2147483647 to practice.cfg to allow demonstrations for more than 2 players.
++ Added "Clearing and resetting..." sections to debug.cfg to reset/purge/clear/flush/reload all possible things.
++ Added Resetting binds section to the start of binds.cfg to ensure a clean slate.
+
+* Fixed jumped alias to be fin_jumped in a few spots
+* Increased sv_unlockedchapters from 1 to 2147483647 (it's max)
+* Changed SCROLLLOCK to exec practice.cfg and skinpictures.cfg instead of directly adjusting convars
+* Changed KP_MINUS to turn off the experimental screen blocker when reloaded
+* Moved some convars from aliases_init.cfg to init.cfg
+* Reordered various lines
+* Replaced clutch_mode_toggle with toggle cl_clutch_mode in F4 keybind
+* Adjusted whitespace and new lines as per usual
+* Changed dbg alias to clear console prior to dumping information
+* Finished launch options section of README
+* Updated joystick buttons to use their new native names
+
+- Removed unnecessary crosshair color changes from ./cfg/aliases/rainbow_crosshiar/*.cfg
+- Removed commented out reset/refresh states section from loader.cfg
+- Removed fixed_controller.360.cfg
+- Removed ./cfg/utility/hardcode_fixes/ because we can apparently use cl_scoreboard_mouse_enable_binding with (desubticked) aliases.
+```
+
+
 ## 5.0.0-beta6
 ```diff
 + Added sv_playerradio_use_allowlist to practice.cfg and safety.cfg
