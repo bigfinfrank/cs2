@@ -120,25 +120,5 @@ Or in a single copy & paste-able codeblock:
 
 ## To-do List
 
-These are final required things that have to be implemented before the CS2 version of the config is put in the release candidate stage.
-- Ensure all files have proper Start of and End of echoes (ex. rainbow crosshair cfgs)
-- Investigate remaining +/- concommands not shown in cvar dumps, cvarlist, nor console autocomplete.
-- Compare performance with CPU affinity adjusted, might be worth a shot.
-- Check for any unknown command/improper usage warnings in console
+These are final required things that have to be implemented before the CS2 version of the config is considered fully ready for release.
 - Final formatting check for whitespace, semicolons, and new lines (the trashy trio of formatting problems in this project)
-- [ ] Experiment with all of the following:
-  - [ ] cl_borrow_music_from_player_slot
-  - [ ] cl_versus_intro
-  - [ ] sv_versus_screen_scene_id
-  - [ ] closecaption
-  - [ ] commentary
-  - [ ] dev_add_onground_on_spawn
-  - [ ] dota_enable_spatial_audio
-  - [ ] dota_spatial_audio_mix
-  - [ ] enable_boneflex
-  - [ ] snd_steamaudio_enable_reverb
-  - [ ] snd_steamaudio_reverb_level_db
-  - [ ] sv_matchend_drops_enabled
-  - [ ] sv_parallel_sendsnapshot 2/3
-  - [ ] sv_show_teammate_death_notification
-  - [ ] voice_test_log_send

@@ -6,6 +6,21 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-rc1
+```diff
++ Added toggles to lag switch aliases
++ Added fin_def_fetch to debug.cfg
++ Added sv_show_teammate_death_notification true to ui.cfg
++ Added voice_test_log_send to audio.cfg
++ Added sv_matchend_drops_enabled true to misc.cfg and practice.cfg
+
+* Updated ./config/keys binds
+* Replaced cyclevar fps_max bind on Q with fin_lagswitch_fps
+* Adjusted whitespace and newlines
+* Changed practice.cfg back to directly calling echoln so it works standalone.
+```
+
+
 ## 5.0.0-beta10
 ```diff
 + Added fin_echo to allow quick changes between the echo and echoln concommands.
