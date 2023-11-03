@@ -75,9 +75,9 @@ It's a little daunting at face value, but in reality it's pretty simple to set u
 2. If there's only one folder with a bunch of numbers, enter that one. If you have multiple, you can find the number that's associated with your account in your [trade URL](https://steamcommunity.com/id/bigfinfrank/tradeoffers/privacy#trade_offer_access_url), look for the numbers between `?partner=` and `&token` in the URL and they should match up with one of the ones in your userdata folder.
 3. Find the folder with CS's App ID, `730` and open it, inside `730`, open `local`, and inside `local`, open `cfg`. If you look at the top bar in File Explorer, your folder structure should look something like this `C:\Program Files (x86)\Steam\userdata\123456789\730\local\cfg`.
 4. Either download this GitHub repository and drag the files into this `cfg` folder, or create a new plain text file called `autoexec`, and change the extension from `.txt` to `.cfg`, CS automatically looks for this file when you launch the game and runs the commands within it.
-5. Open up the file and type in `clear; echo My first autoexec just got executed!`, then start up the game.
+5. Open up the file and type in `echo My first autoexec just got executed!`, then start up the game.
 
-- If you open up the console and scroll to the very top, you should see text saying `My first autoexec just got executed!` and that means you're good to go! Start putting console commands you run in game into your `autoexec.cfg` file and they'll automatically be run every time you launch CS.
+- If you open up the console, you should see text saying `My first autoexec just got executed!` and that means you're good to go! Start putting console commands you run in game into your `autoexec.cfg` file and they'll automatically be run every time you launch CS.
 - If you don't see it, double check you spelled everything right and try typing `exec autoexec.cfg` in console, then:
   - If it says the file doesn't exist, you probably put the file in the wrong folder, or didn't change the extension correctly.
   - If it clears your console and shows the text, but doesn't do so when the game launches, add `+exec autoexec.cfg` to your [launch options](https://help.steampowered.com/en/faqs/view/7D01-D2DD-D75E-2955) for CS, and try again.
@@ -121,11 +121,9 @@ Or in a single copy & paste-able codeblock:
 ## To-do List
 
 These are final required things that have to be implemented before the CS2 version of the config is put in the release candidate stage.
-- Directly alias desubtick binds instead of using separate cfgs to prevent console spam
+- Ensure all files have proper Start of and End of echoes (ex. rainbow crosshair cfgs)
 - Investigate remaining +/- concommands not shown in cvar dumps, cvarlist, nor console autocomplete.
 - Compare performance with CPU affinity adjusted, might be worth a shot.
-- Comapre `clearall` concommand with `clear` to see if we should use that instead (might only make a difference when using vconsole?)
-- Implement cfg to fetch values of all defensive convars via undocumented incrementvar exploit.
 - Check for any unknown command/improper usage warnings in console
 - Final formatting check for whitespace, semicolons, and new lines (the trashy trio of formatting problems in this project)
 - [ ] Experiment with all of the following:

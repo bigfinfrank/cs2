@@ -6,6 +6,20 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta10
+```diff
++ Added fin_echo to allow quick changes between the echo and echoln concommands.
++ Added aliases_desubtick.cfg to ./config/aliases/ with desubtick aliases (no more exec console spam!)
++ Added defensive-value-fetchers to ./config/defensive_values/ which allows you to dump the current values of (most) defensive convars to console. (use fin_def_fetch)
+
+* Fixed fin_scoreboardfix being missing before tab has been pressed
+* Fixed stray = sign causing an unknown command error in console
+* Uncommented fps-based lag switch and renamed it to +/-fin_lagswitch_fps
+
+- Removed nav_clear_attribute from debug.cfg because it required an argument and didn't really fit into debug.cfg
+```
+
+
 ## 5.0.0-beta9
 ```diff
 + Added close_buymenu after buymenu bind to remove the blur and post processing filters from behind the buy menu screen
@@ -409,7 +423,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 * Rename autoexecX.cfg to autoexec-partX.cfg
 * Commented out several convars removed in CS2
-* Replace all echos with echoln (fixes echo ""; empty newlines)
+* Replace all echos with echoln (fixes fin_echo ""; empty newlines)
 * Updated rate comments with up to date information around CS2 rate settings
 * Updated rate to new maximum (from 786432 to 1000000)
 * Updated Lag switch to use new rate minimum and maximum.
