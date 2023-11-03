@@ -120,5 +120,4 @@ Or in a single copy & paste-able codeblock:
 
 ## To-do List
 
-These are final required things that have to be implemented before the CS2 version of the config is considered fully ready for release.
-- Final formatting check for whitespace, semicolons, and new lines (the trashy trio of formatting problems in this project)
+Nothing as of right now.

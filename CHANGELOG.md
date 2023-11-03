@@ -6,6 +6,13 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-rc2
+```diff
+* Fixed remaining formatting issues.
+* Updated README to clear to-do list.
+```
+
+
 ## 5.0.0-rc1
 ```diff
 + Added toggles to lag switch aliases
