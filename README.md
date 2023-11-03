@@ -121,19 +121,13 @@ Or in a single copy & paste-able codeblock:
 ## To-do List
 
 These are final required things that have to be implemented before the CS2 version of the config is put in the release candidate stage.
-- Check all `// CS2`, readding commands that valve readded and removing those that weren't reimplemented.
-- Iterate through developmentonly and defensive commands to check for any that should be added
-- Final formatting check for whitespace, semicolons, and new lines (the trashy trio of formatting problems in this project)
 - Directly alias desubtick binds instead of using separate cfgs to prevent console spam
-- Check for any unknown command/improper usage warnings in console
-- Comapre `clearall` concommand with `clear` to see if we should use that instead (might only make a difference when using vconsole?)
-- See if we can use vconsole by manually opening vconsole2.exe next to cs2.exe
-- Dump convars from the copy of the game launched through the hammer editor to see if it reveals anything secret
 - Investigate remaining +/- concommands not shown in cvar dumps, cvarlist, nor console autocomplete.
-- Investigate ignorerad-esque commands that don't show up in cvar dumps, cvarlist, nor console autocomplete.
-- Implement cfg to fetch values of all defensive convars via undocumented incrementvar exploit.
 - Compare performance with CPU affinity adjusted, might be worth a shot.
-- Investigate newer launch options.
+- Comapre `clearall` concommand with `clear` to see if we should use that instead (might only make a difference when using vconsole?)
+- Implement cfg to fetch values of all defensive convars via undocumented incrementvar exploit.
+- Check for any unknown command/improper usage warnings in console
+- Final formatting check for whitespace, semicolons, and new lines (the trashy trio of formatting problems in this project)
 - [ ] Experiment with all of the following:
   - [ ] cl_borrow_music_from_player_slot
   - [ ] cl_versus_intro

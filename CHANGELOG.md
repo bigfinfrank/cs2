@@ -6,6 +6,25 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta9
+```diff
++ Added close_buymenu after buymenu bind to remove the blur and post processing filters from behind the buy menu screen
++ Added cl_show_equipped_character_for_player_avatars true
++ Added enable_priority_boost to visuals.cfg
++ Added input_button_code_is_scan_code to binds.cfg
++ Added sv_disable_observer_interpolation true to safety.cfg and practice.cfg
+
+* Fixed some incorrect exec paths after beta8's folder restructure
+* Reordered some convars
+* Adjusted whitespace
+* Uncommented snd_mix_async because it's only developmentonly and not actually removed
+* Replaced commented-out cl_freezecameffects_showholiday 0 with sv_holiday_mode 0, which indirectly accomplishes the same thing.
+
+- Removed dm_reset_spawns and reload_store_config from debug.cfg because they were causing crashes
+- Removed volume from audio.cfg in favor of using -fin_loudshift to set it.
+```
+
+
 ## 5.0.0-beta8
 ```diff
 + Added fin_scoreboardfix and fin_scoreboard_off to fin_controls.cfg to fix the issue where you can't bring up the scoreboard at the end of matches
