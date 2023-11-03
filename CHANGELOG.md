@@ -6,6 +6,23 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0-beta8
+```diff
++ Added fin_scoreboardfix and fin_scoreboard_off to fin_controls.cfg to fix the issue where you can't bring up the scoreboard at the end of matches
++ Added sv_merge_changes_after_tick_with_calcdelta 2, fs_report_sync_opens 1,  and cl_error_report_time 10 for extra debug info in console
++ Added sv_pure_trace 1 to practice.cfg and safety.cfg
++ Added snd_steamaudio_enable_perspective_correction true to audio.cfg
+
+* Updated launch options, they're now actually fully finalised with documentation.
+* Updated README
+* Moved boot.cfg out of ./cfg/ and into the root of the project next to autoexec.cfg
+* Moved desubtick and rainbow_crosshair folders from ./cfg/aliases/ up to ./cfg/
+* Renamed cfg folder to config
+
+- Removed fix_mouse2 and unfix_mouse2
+```
+
+
 ## 5.0.0-beta7
 ```diff
 + Added cl_drawhud_force_deathnotices, cl_drawhud_force_radar, hidehud, spec_hide_players, hud_showtargetid, cl_drawhud_specvote, to ui.cfg and skinpictures.cfg

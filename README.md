@@ -94,20 +94,21 @@ There's always more you can do. A few popular ones are:
 
 Separate from the above list of plug-and-play tweaks, you can also change your game's launch options to enforce certain settings and help CS behave as you'd like it to on your system, remove some artificial limitations, and add some functionality. Mine are below, along with short descriptions for each of them:
 
-- `-high` Sets the game's priority to High
-- `-mainthreadpriority` TODO: ADD DOCUMENTATION (likely from microsoft docs)
-- `-set_power_qos_disable` TODO: ADD DOCUMENTATION (likely from microsoft docs)
-- `-sse4` TODO: ADD DOCUMENTATION (likely need wikipedia reference)
-- `-usePriorityBoost` TODO: ADD DOCUMENTATION (likely from microsoft docs)
-- `-threads 16` Number of threads to allocate for the thread pool, default is 3. Set this to the number of CPU threads your CPU has. Going above 16 crashed on CSGO but I haven't experienced any issues on CS2 thus far.
-- `-promptperfectworld` TODO: ADD DOCUMENTATION (likely from patchnotes)
+- `-high` Sets the process priority to [HIGH_PRIORITY_CLASS](https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities)
+- `-mainthreadpriority` Sets thread priority to [THREAD_PRIORITY_HIGHEST](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority)
+- `-set_power_qos_disable` Disables windows power throttling via [PROCESS_POWER_THROTTLING_STATE](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_power_throttling_state)
+- `-sse4` Enables the [SSE4 instruction](https://en.wikipedia.org/wiki/SSE4) set
+- `-usePriorityBoost` Forces [Priority Boost](https://learn.microsoft.com/en-us/windows/win32/procthread/priority-boosts) on, even though it's on by default
+- `-threads 24` Number of threads to allocate for the thread pool. Set this to the number of CPU threads your CPU has. Going above 16 crashed on CSGO but I haven't experienced any issues on CS2 thus far.
+- `-promptperfectworld` Forces a prompt at launch which allows selecting "-perfectworld" or "-worldwide" mode
 - `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
-- `-devcontent` TODO: ADD DOCUMENTATION
+- `-devcontent` Enables additional console output
 - `-forcenovsync` Force disables vsync (which you should always have off anyways)
 - `-favor_consistent_framerate` Seems to be making the game feel smoother for me with a mild decrease in framerate (280-320 from 300-350), not seeing a noticeable consistency bump in frametimes though so could be placebo.
 - `-language` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
-- `-condebug` TODO: ADD DOCUMENTATION (likely from patchnotes)
-- `-console` TODO: ADD DOCUMENTATION
+- `-condebug` Logs all console output into the console.log text file.
+- `-console` Starts the game with the developer console enabled. Same as having con_enable enabled.
+- `-asyncconsole` dedicated server only; runs the console in a separate thread
 - `+exec` Since this starts with a + this just means it'll run whatever comes afterwards as a console command as soon as the game launches.
 
 Or in a single copy & paste-able codeblock:
@@ -119,33 +120,33 @@ Or in a single copy & paste-able codeblock:
 
 ## To-do List
 
-These are eventual features that don't have a great effort to benefit ratio for my personal use cases, but I'd like to include eventually.
-
-- Make necessary changes for the config to work flawlessly in CS2, removing broken features and making adjustments where necessary.
-  - [ ] Need to find a way to get the scoreboard working during halftime swap animation.
-- External GitHub Wiki documentation.
-- Move CS2 config to it's own repository OR move TF2 and CSGO configs out of this repository.
-- Implement [MrMaxim's "ADVANCED BIND SCRIPT"](https://www.youtube.com/watch?v=xVrFxYeSJ7Q) allowing you to bind multiple separate actions to the same key and only executing certain actions if a modifier key is held
-- Verify that the `S1_UP` and `S2_UP` keys map to releasing stick buttons on controllers.
-- Experiment with all of the following:
-  - cl_borrow_music_from_player_slot
-  - cl_versus_intro
-  - sv_versus_screen_scene_id
-  - closecaption
-  - commentary
-  - cl_error_report_time 10
-  - dev_add_onground_on_spawn
-  - dota_enable_spatial_audio
-  - dota_spatial_audio_mix
-  - enable_boneflex
-  - fs_report_sync_opens
-  - snd_steamaudio_enable_perspective_correction
-  - snd_steamaudio_enable_reverb
-  - snd_steamaudio_reverb_level_db
-  - sv_matchend_drops_enabled
-  - sv_merge_changes_after_tick_with_calcdelta 2
-  - sv_parallel_sendsnapshot 2/3
-  - sv_pause_on_console_open
-  - sv_pure_trace
-  - sv_show_teammate_death_notification
-  - voice_test_log_send
+These are final required things that have to be implemented before the CS2 version of the config is put in the release candidate stage.
+- Check all `// CS2`, readding commands that valve readded and removing those that weren't reimplemented.
+- Iterate through developmentonly and defensive commands to check for any that should be added
+- Final formatting check for whitespace, semicolons, and new lines (the trashy trio of formatting problems in this project)
+- Directly alias desubtick binds instead of using separate cfgs to prevent console spam
+- Check for any unknown command/improper usage warnings in console
+- Comapre `clearall` concommand with `clear` to see if we should use that instead (might only make a difference when using vconsole?)
+- See if we can use vconsole by manually opening vconsole2.exe next to cs2.exe
+- Dump convars from the copy of the game launched through the hammer editor to see if it reveals anything secret
+- Investigate remaining +/- concommands not shown in cvar dumps, cvarlist, nor console autocomplete.
+- Investigate ignorerad-esque commands that don't show up in cvar dumps, cvarlist, nor console autocomplete.
+- Implement cfg to fetch values of all defensive convars via undocumented incrementvar exploit.
+- Compare performance with CPU affinity adjusted, might be worth a shot.
+- Investigate newer launch options.
+- [ ] Experiment with all of the following:
+  - [ ] cl_borrow_music_from_player_slot
+  - [ ] cl_versus_intro
+  - [ ] sv_versus_screen_scene_id
+  - [ ] closecaption
+  - [ ] commentary
+  - [ ] dev_add_onground_on_spawn
+  - [ ] dota_enable_spatial_audio
+  - [ ] dota_spatial_audio_mix
+  - [ ] enable_boneflex
+  - [ ] snd_steamaudio_enable_reverb
+  - [ ] snd_steamaudio_reverb_level_db
+  - [ ] sv_matchend_drops_enabled
+  - [ ] sv_parallel_sendsnapshot 2/3
+  - [ ] sv_show_teammate_death_notification
+  - [ ] voice_test_log_send
