@@ -6,6 +6,12 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.0
+```diff
+* No changes, just version bump to remove RC tag. Happy CS2 Release!
+```
+
+
 ## 5.0.0-rc3
 ```diff
 * Fixed Unknown command: fin_forward_released in console when using long jump bind
