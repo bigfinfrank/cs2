@@ -6,6 +6,20 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.1
+```diff
++ Added -asyncconsole to the easily-copiable launch options string
+
+* Muted snd_deathcamera_volume in audio.cfg
+* Fixed fin_blockscreen_off to set cl_crosshairdot false
+* Increased base volume from 35% -> 45% and slow-walking volume from 45% -> 65%
+* Appended volume float -> percent table under -fin_loudshift in aliases_misc.cfg
+* Changed MWHEELDOWN from fin_highveljump -> fin_desubtick_jump
+
+- Removed duplicate cl_invites_only_mainmenu from safety.cfg
+```
+
+
 ## 5.0.0
 ```diff
 * No changes, just version bump to remove RC tag. Happy CS2 Release!
@@ -42,7 +56,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 ## 5.0.0-beta10
 ```diff
-+ Added fin_echo to allow quick changes between the echo and echoln concommands.
++ Added echoln to allow quick changes between the echo and echoln concommands.
 + Added aliases_desubtick.cfg to ./config/aliases/ with desubtick aliases (no more exec console spam!)
 + Added defensive-value-fetchers to ./config/defensive_values/ which allows you to dump the current values of (most) defensive convars to console. (use fin_def_fetch)
 
@@ -457,7 +471,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 * Rename autoexecX.cfg to autoexec-partX.cfg
 * Commented out several convars removed in CS2
-* Replace all echos with echoln (fixes fin_echo ""; empty newlines)
+* Replace all echos with echoln (fixes echoln ""; empty newlines)
 * Updated rate comments with up to date information around CS2 rate settings
 * Updated rate to new maximum (from 786432 to 1000000)
 * Updated Lag switch to use new rate minimum and maximum.

@@ -94,30 +94,38 @@ There's always more you can do. A few popular ones are:
 
 Separate from the above list of plug-and-play tweaks, you can also change your game's launch options to enforce certain settings and help CS behave as you'd like it to on your system, remove some artificial limitations, and add some functionality. Mine are below, along with short descriptions for each of them:
 
-- `-high` Sets the process priority to [HIGH_PRIORITY_CLASS](https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities)
-- `-mainthreadpriority` Sets thread priority to [THREAD_PRIORITY_HIGHEST](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority)
-- `-set_power_qos_disable` Disables windows power throttling via [PROCESS_POWER_THROTTLING_STATE](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_power_throttling_state)
-- `-sse4` Enables the [SSE4 instruction](https://en.wikipedia.org/wiki/SSE4) set
-- `-usePriorityBoost` Forces [Priority Boost](https://learn.microsoft.com/en-us/windows/win32/procthread/priority-boosts) on, even though it's on by default
-- `-threads 24` Number of threads to allocate for the thread pool. Set this to the number of CPU threads your CPU has. Going above 16 crashed on CSGO but I haven't experienced any issues on CS2 thus far.
-- `-promptperfectworld` Forces a prompt at launch which allows selecting "-perfectworld" or "-worldwide" mode
-- `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
-- `-devcontent` Enables additional console output
-- `-forcenovsync` Force disables vsync (which you should always have off anyways)
-- `-favor_consistent_framerate` Seems to be making the game feel smoother for me with a mild decrease in framerate (280-320 from 300-350), not seeing a noticeable consistency bump in frametimes though so could be placebo.
-- `-language` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
+- `-asyncconsole` dedicated server only; runs the console in a separate thread
 - `-condebug` Logs all console output into the console.log text file.
 - `-console` Starts the game with the developer console enabled. Same as having con_enable enabled.
-- `-asyncconsole` dedicated server only; runs the console in a separate thread
+- `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
+- `-devcontent` Enables additional console output
+- `-favor_consistent_framerate` Seems to be making the game feel smoother for me with a mild decrease in framerate (280-320 from 300-350), not seeing a noticeable consistency bump in frametimes though so could be placebo.
+- `-forcenovsync` Force disables vsync (which you should always have off anyways)
+- `-high` Sets the process priority to [HIGH_PRIORITY_CLASS](https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities)
+- `-language textmod` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
+- `-mainthreadpriority 2` Sets thread priority to [THREAD_PRIORITY_HIGHEST](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority)
+- `-nojoy` Switching off joysticks, joystick support.
+- `-promptperfectworld` Forces a prompt at launch which allows selecting "-perfectworld" or "-worldwide" mode
+- `-set_power_qos_disable` Disables windows power throttling via [PROCESS_POWER_THROTTLING_STATE](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_power_throttling_state)
+- `-sse4` Enables the [SSE4 instruction set](https://en.wikipedia.org/wiki/SSE4)
+- `-threads 24` Number of threads to allocate for the thread pool. Set this to the number of CPU threads your CPU has. Going above 16 crashed on CSGO but I haven't experienced any issues on CS2 thus far.
+- `-usePriorityBoost` Forces [Priority Boost](https://learn.microsoft.com/en-us/windows/win32/procthread/priority-boosts) on, even though it's on by default
 - `+exec` Since this starts with a + this just means it'll run whatever comes afterwards as a console command as soon as the game launches.
-
 Or in a single copy & paste-able codeblock:
 
 ```txt
--high -mainthreadpriority 2 -set_power_qos_disable -sse4 -usePriorityBoost -threads 24 -promptperfectworld -dev -devcontent -forcenovsync -favor_consistent_framerate -language textmod -condebug -console +exec ./boot.cfg; +exec ./autoexec.cfg;
+-asyncconsole -condebug -console -dev -devcontent -favor_consistent_framerate -forcenovsync -high -language textmod -mainthreadpriority 2 -nojoy -promptperfectworld -set_power_qos_disable -sse4 -threads 24 -usePriorityBoost +exec ./boot.cfg; +exec ./autoexec.cfg;
 ```
 
 
 ## To-do List
 
-Nothing as of right now.
+- [ ] Add in-line description documentation for defensive_values
+- [ ] Find solution for fin_scorenet disallowing scoreboard while in halftime/postmatch
+- [ ] GitHub Wiki Documentation
+- [ ] Migrate meta GitHub Repository settings from Main branch to cs2 branch
+- [ ] Migrate TF2, CSGO, and gmod to their own repositories so CS2 can have this one to itself (and rename this repo to cs2)
+- [ ] Further develop the idea of ./config/prog/
+- [ ] Consider file/folder restructure (only shuffling files between directories)
+- [ ] Update echoln documentation for groups of convars
+- [ ] Reorganise convars throughout their own files
