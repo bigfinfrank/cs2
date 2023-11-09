@@ -93,14 +93,15 @@ There's always more you can do. A few popular ones are:
 ### Launch options
 
 Separate from the above list of plug-and-play tweaks, you can also change your game's launch options to enforce certain settings and help CS behave as you'd like it to on your system, remove some artificial limitations, and add some functionality. Mine are below, along with short descriptions for each of them:
-
+- `-secure` Not a real launch option, however it makes it quick and easy to add -insecure to your launch options
+- `-dont_allow_third_party_software` Not a real launch option, however it makes it quick and easy to add -allow_third_party_software to your launch options
 - `-asyncconsole` dedicated server only; runs the console in a separate thread
 - `-condebug` Logs all console output into the console.log text file.
 - `-console` Starts the game with the developer console enabled. Same as having con_enable enabled.
 - `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
 - `-devcontent` Enables additional console output
-- `-favor_consistent_framerate` Seems to be making the game feel smoother for me with a mild decrease in framerate (280-320 from 300-350), not seeing a noticeable consistency bump in frametimes though so could be placebo.
 - `-forcenovsync` Force disables vsync (which you should always have off anyways)
+- `-height 1440` Forces the engine to start with resolution set to <height>. Ex: -h 1080
 - `-high` Sets the process priority to [HIGH_PRIORITY_CLASS](https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities)
 - `-language textmod` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
 - `-mainthreadpriority 2` Sets thread priority to [THREAD_PRIORITY_HIGHEST](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority)
@@ -110,17 +111,17 @@ Separate from the above list of plug-and-play tweaks, you can also change your g
 - `-sse4` Enables the [SSE4 instruction set](https://en.wikipedia.org/wiki/SSE4)
 - `-threads 24` Number of threads to allocate for the thread pool. Set this to the number of CPU threads your CPU has. Going above 16 crashed on CSGO but I haven't experienced any issues on CS2 thus far.
 - `-usePriorityBoost` Forces [Priority Boost](https://learn.microsoft.com/en-us/windows/win32/procthread/priority-boosts) on, even though it's on by default
-- `+exec` Since this starts with a + this just means it'll run whatever comes afterwards as a console command as soon as the game launches.
+- `-width 2560` Forces the engine to start with resolution set to <width>. Ex: -w 1920
+- `+exec` Since this starts with a + this just means it'll run whatever comes afterwards as a console command as soon as the game launches. In this case, it runs the exec command which is used to load commands from the given cfg file.
 Or in a single copy & paste-able codeblock:
 
 ```txt
--asyncconsole -condebug -console -dev -devcontent -favor_consistent_framerate -forcenovsync -high -language textmod -mainthreadpriority 2 -nojoy -promptperfectworld -set_power_qos_disable -sse4 -threads 24 -usePriorityBoost +exec ./boot.cfg; +exec ./autoexec.cfg;
+-secure -dont_allow_third_party_software -asyncconsole -condebug -console -dev -devcontent -forcenovsync -height 1440 -high -language textmod -mainthreadpriority 2 -nojoy -promptperfectworld -set_power_qos_disable -sse4 -threads 24 -usePriorityBoost -width 2560 +exec ./boot.cfg; +exec ./autoexec.cfg;
 ```
 
 
 ## To-do List
-
-- [ ] Add in-line description documentation for defensive_values
+- [x] Add in-line description documentation for defensive_values
 - [ ] Find solution for fin_scorenet disallowing scoreboard while in halftime/postmatch
 - [ ] GitHub Wiki Documentation
 - [ ] Migrate meta GitHub Repository settings from Main branch to cs2 branch

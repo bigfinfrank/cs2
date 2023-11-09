@@ -6,6 +6,30 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.2
+```diff
++ Added `-width` and `-height` launch options to README.md launch option list and easily-copiable string
++ Added fake launch options -secure and -dont_allow_third_party_software to README.md launch option list and easily-copiable string. They're just there to make it easier to add -insecure and -allow_third_party_software when either are needed
++ Added in-line documentation to defensive_values_*.cfg files and restructured them into 100 convars per file to avoid "command buffer full" errors
++ Added voice_loopback true to audio.cfg so you know when your mic isn't working
++ Added one-time debug information to boot.cfg
++ Added auto-reload alias for shotguns to aliases_exploits.cfg
++ Added sv_setsteamaccount to server_secrest.cfg.example
+
+* Rearranged debug.cfg
+* Fixed leftover from fin_echoln causing a alias error in console in init.cfg
+* Disabled fin_blockscreen's automatic execution in ui.cfg
+* Renamed fin_onmousemove to fin_mousecontainer to follow the naming scheme used by fin_keycontainer since it has similar functionality
+* Reversed the order of sv_minrate and sv_maxrate so that the minimum can't be briefly set above the maximum.
+
+- Removed favor_consistent_framerate from launch options as it doesn't have an effect on CS2.
+- Removed defensive convar fetching from debug.cfg, the aliases still exist
+- Removed fin_task* in favor of directly using aliases within fin_mousecontainer
+- Removed fin_onyaw, fin_onpitch, fin_override_yaw, and fin_override_pitch from aliases_init.cfg
+- Removed snd_soundevent_clear_deferred because as of the most recent update it started breaking footstep sounds
+```
+
+
 ## 5.0.1
 ```diff
 + Added -asyncconsole to the easily-copiable launch options string
@@ -56,7 +80,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 
 ## 5.0.0-beta10
 ```diff
-+ Added echoln to allow quick changes between the echo and echoln concommands.
++ Added fin_echoln to allow quick changes between the echo and echoln concommands.
 + Added aliases_desubtick.cfg to ./config/aliases/ with desubtick aliases (no more exec console spam!)
 + Added defensive-value-fetchers to ./config/defensive_values/ which allows you to dump the current values of (most) defensive convars to console. (use fin_def_fetch)
 
