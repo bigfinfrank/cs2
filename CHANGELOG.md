@@ -6,6 +6,27 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.3
+```diff
++ Added sv_maxuptimelimit "0"; to networking.cfg and practice.cfg
++ Added snd_voipvolume 0.5625 (80%) to audio.cfg
++ Added viewmodel preset overrides to skinpictures to prevent the viewmodel from being changed from your manually-adjusted one when inspecting skins
++ Added timeout and surrender binds to the F9 and F10 keys respectively
++ Added spin left and spin right yaw binds to left and right arrow keys respectively
++ Added buggy "hyper spin" yaw bind to up arrow key
++ Added +fin_desubtick_attack bind to the enter key for keyboard-only combat
+
+* Moved 180 bind from P key to down arrow key
+
+- Removed -forcenovsync from quick-copy launch options, the documentation for it is still preset but there's a note that says it's non-functional.
+- Removed -secure and -dont_allow_third_party_software from quick-copy launch options because they were pushing the launch option character limit and won't be used by most people
+- Removed -asyncconsole from quick-copy launch options because it only applies to dedicated servers, this has also been bolded in the documentation for it.
+- Removed cs_quit_prompt from F10 key
+- Removed existing yaw spin bind from O key
+- Removed sv_unify_random_seed, cl_lagcompensation, cl_predictweapons, and cl_predict from networking.cfg as they were all removed by Valve in a recent update
+```
+
+
 ## 5.0.2
 ```diff
 + Added `-width` and `-height` launch options to README.md launch option list and easily-copiable string

@@ -95,12 +95,12 @@ There's always more you can do. A few popular ones are:
 Separate from the above list of plug-and-play tweaks, you can also change your game's launch options to enforce certain settings and help CS behave as you'd like it to on your system, remove some artificial limitations, and add some functionality. Mine are below, along with short descriptions for each of them:
 - `-secure` Not a real launch option, however it makes it quick and easy to add -insecure to your launch options
 - `-dont_allow_third_party_software` Not a real launch option, however it makes it quick and easy to add -allow_third_party_software to your launch options
-- `-asyncconsole` dedicated server only; runs the console in a separate thread
+- `-asyncconsole` **dedicated server only**; runs the console in a separate thread
 - `-condebug` Logs all console output into the console.log text file.
 - `-console` Starts the game with the developer console enabled. Same as having con_enable enabled.
 - `-dev` Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
 - `-devcontent` Enables additional console output
-- `-forcenovsync` Force disables vsync (which you should always have off anyways)
+- `-forcenovsync` **This seems to be non-functional** Force disables vsync (which you should always have off anyways)
 - `-height 1440` Forces the engine to start with resolution set to <height>. Ex: -h 1080
 - `-high` Sets the process priority to [HIGH_PRIORITY_CLASS](https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities)
 - `-language textmod` Changes your language to the specified one, mine is [xPaw's text mod](https://github.com/xPaw/CS2).
@@ -116,7 +116,7 @@ Separate from the above list of plug-and-play tweaks, you can also change your g
 Or in a single copy & paste-able codeblock:
 
 ```txt
--secure -dont_allow_third_party_software -asyncconsole -condebug -console -dev -devcontent -forcenovsync -height 1440 -high -language textmod -mainthreadpriority 2 -nojoy -promptperfectworld -set_power_qos_disable -sse4 -threads 24 -usePriorityBoost -width 2560 +exec ./boot.cfg; +exec ./autoexec.cfg;
+-condebug -console -dev -devcontent -height 1440 -high -language textmod -mainthreadpriority 2 -nojoy -promptperfectworld -set_power_qos_disable -sse4 -threads 24 -usePriorityBoost -width 2560 +exec ./boot.cfg; +exec ./autoexec.cfg;
 ```
 
 
