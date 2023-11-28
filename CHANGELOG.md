@@ -6,6 +6,32 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.4
+```diff
++ Added "il" and "gl" aliases to quickly paste in inspect link IDs and gen codes through console
++ Added echolns per section of skinpictures.cfg
++ Added more robust frame rate limiting to skinpictures.cfg
++ Added fin_vmp_skins directly into skinpictures.cfg
++ Added both sv_skirmish_id and game_alias next to all instances of game_mode
++ Added sv_reliableavatardata to practice.cfg and safety.cfg
++ Added cl_deathnotices_show_numbers "2" to ui.cfg
+
+* Reworked defensive_values, there are now a maximum of 75 convars per file and the CFGs are auto generated from a cvar dump.
+* Changed sv_cheats "1" -> "true"
+* Changed fin_vmp_skins to use viewmodel_offset_x, y, and z to 1, and set viewmodel_fov 61
+* fin_vmp_skins is no longer disabled by skinpictures.cfg
+* Adjusted whitespace
+* Changed all instances of developer cvar from 4 -> 2147483647
+* Reordered practice.cfg, moving some cvars between sections
+* Changed echolns in practice.cfg
+* Removed a double-space in the middle of a sentence in an old changelog entry
+* Lowered hidehud to 2147483626 so that you can still change weapons
+
+- Removed outdated comment from autoexec.cfg
+- Removed sv_unify_random_seed from practice.cfg as it was removed in a recent update
+```
+
+
 ## 5.0.3
 ```diff
 + Added sv_maxuptimelimit "0"; to networking.cfg and practice.cfg
@@ -135,7 +161,7 @@ We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is
 ## 5.0.0-beta8
 ```diff
 + Added fin_scoreboardfix and fin_scoreboard_off to fin_controls.cfg to fix the issue where you can't bring up the scoreboard at the end of matches
-+ Added sv_merge_changes_after_tick_with_calcdelta 2, fs_report_sync_opens 1,  and cl_error_report_time 10 for extra debug info in console
++ Added sv_merge_changes_after_tick_with_calcdelta 2, fs_report_sync_opens 1, and cl_error_report_time 10 for extra debug info in console
 + Added sv_pure_trace 1 to practice.cfg and safety.cfg
 + Added snd_steamaudio_enable_perspective_correction true to audio.cfg
 
