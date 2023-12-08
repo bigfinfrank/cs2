@@ -2,6 +2,8 @@
 
 This is the config I use whenever I play CS2, changing game settings and console variables to match my personal preferences, make quality-of-life changes, and tweaking values for subtle competitive advantages.
 
+**If you have any questions, feel free to add me as a friend on Discord, [@femboyfin](https://discord.com/users/386945522608373785) or join my personal server, https://discord.com/invite/tcrB28MWk8. I'm always more than happy to help answer questions or help you troubleshoot, but don't expect me to spoonfeed/do *everything* for you.**
+
 ## What is a `.cfg` file?
 
 There are official Valve docs [here](https://developer.valvesoftware.com/wiki/CFG), but in short; it's a text file with a long list of console commands, typically with some blank lines for organisation and some comments that are ignored by the game but help humans understand what different parts of the `.cfg` file are for.

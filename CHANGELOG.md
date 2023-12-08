@@ -6,6 +6,21 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.5
+```diff
++ Added jump throw aliases, bound to "A" key by default
++ Added voice_vox "0" to audio.cfg
++ Added cl_sniper_auto_rezoom, cl_mouselook, cl_inventory_radial_immediate_select, cl_inventory_radial_tap_to_cycle, and cl_buywheel_nonumberpurchasing (all true) to controls.cfg
++ Added ui_mainmenu_bkgnd_movie_1016BB11 "de_vertigo" to ui.cfg
++ Added skill_container.cfg, skill1.cfg, skill2.cfg, and skill3.cfg to assist in force-enabling some convars on main menu load/server join.
++ Added host_timescale "1" to misc.cfg
++ Added mat_fullbright "0" and mat_disable_normal_mapping "false" to visuals.cfg so it's reset if skill*.cfg's set it for the main menu and the next server joined wasn't an online one.
++ Added contact info to the top of the README
+
+* Reordered some convars
+```
+
+
 ## 5.0.4
 ```diff
 + Added "il" and "gl" aliases to quickly paste in inspect link IDs and gen codes through console
