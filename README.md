@@ -2,7 +2,7 @@
 
 This is the config I use whenever I play CS2, changing game settings and console variables to match my personal preferences, make quality-of-life changes, and tweaking values for subtle competitive advantages.
 
-**If you have any questions, feel free to add me as a friend on Discord, [@femboyfin](https://discord.com/users/386945522608373785) or join my personal server, https://discord.com/invite/tcrB28MWk8. I'm always more than happy to help answer questions or help you troubleshoot, but don't expect me to spoonfeed/do *everything* for you.**
+**If you have any questions, feel free to add me as a friend on Discord, [@femboyfin](https://discord.com/users/386945522608373785) or join [my personal server](https://discord.com/invite/tcrB28MWk8). I'm always more than happy to help answer questions or help you troubleshoot, but don't expect me to spoonfeed/do *everything* for you.**
 
 ## What is a `.cfg` file?
 
@@ -65,7 +65,7 @@ Automation and ease of use:
 
 - Scenario 1: **A close trusting friend of mine bought a Karambit but has a low res monitor, they want me to enter a private server with them and take screenshots on their account, but I have different keybinds.** Instead of changing all of my bindings to be able to move around manually, storing keybinds in a config let's you easily apply to them to any account you're using.
 - Scenario 2: **You bought a brand new computer with all new parts and need to fresh install CS.** Instead of fine tuning all of your game settings and keybinds, having to go back and forth between your old and new PC, you can just type "exec autoexec" in console and change everything to exactly how you remember it.
-- Scenario 3: **You use a bind that's more complicated than something as basic as `bind MOUSE1 +attack` like a simple crouch jump bind, requiring you to run some console commands to get it working every time the game launches.** Since all the commands in your `autoexec.cfg` file are run every time the game starts, you can just hop straight into a match and your
+- Scenario 3: **You use a bind that's more complicated than something as basic as `bind MOUSE1 +attack` like a simple crouch jump bind, requiring you to run some console commands to get it working every time the game launches.** Since all the commands in your `autoexec.cfg` file are run every time the game starts, you can just hop straight into a match and your bind just works.
 - Scenario 4: **You change a lot of settings in CS and like tweaking values a lot.** Using a config will let you organise the different changes you make into neat categories and easily look through complicated and/or long lists of commands you run to customise your game.
 - Scenario 5: **You want to create something more advanced than a basic bind, but doing everything directly through the console is confusing**. Using cfg files lets you run console commands without the console itself, you can type out and edit commands in your favorite text editor and simply launch the game to apply your changes or bind a key to run your `.cfg` file even mid-game.
 
@@ -127,7 +127,6 @@ Or in a single copy & paste-able codeblock:
 - [ ] Find solution for fin_scorenet disallowing scoreboard while in halftime/postmatch
 - [ ] GitHub Wiki Documentation
 - [ ] Migrate meta GitHub Repository settings from Main branch to cs2 branch
-- [ ] Migrate TF2, CSGO, and gmod to their own repositories so CS2 can have this one to itself (and rename this repo to cs2)
 - [ ] Further develop the idea of ./config/prog/
 - [ ] Consider file/folder restructure (only shuffling files between directories)
 - [ ] Update echoln documentation for groups of convars

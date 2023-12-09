@@ -6,6 +6,17 @@ New updates are added as a h2 header (`##`) above the previous version (meaning 
 We use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) which is the undoubtedly best format for version formatting, please use it for your own projects.
 
 
+## 5.0.6
+```diff
++ Added sv_enablebunnyhopping false to practice.cfg
+
+* Updated defensive values and increased their min and max incrementvar parameters to the minimum and maximum float64 values CS2 allows without going inf
+* Fixed a line that abruptly ended in the README (thanks @aimslut!)
+* Fixed demo_info being run twice at the end of practice.cfg (thanks again @aimslut!)
+* Fixed a couple linting issues in README.md
+```
+
+
 ## 5.0.5
 ```diff
 + Added jump throw aliases, bound to "A" key by default
